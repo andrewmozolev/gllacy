@@ -59,7 +59,7 @@
             <input class="user-block__input" type="text" name="email" id="email"  placeholder="Электронная почта">
             <input class="user-block__input" type="password" name="password" id="password"  placeholder="Пароль">
             <div class="user-block__buttons">
-              <input class="btn btn--user-block" type="submit" name="send" id="send" value="Войти">
+              <input class="btn btn--user-block" type="submit" name="user-send" id="user-send" value="Войти">
               <a class="user-block__link" href="#">Забыли пароль?</a>
               <a class="user-block__link" href="#">Новая регистрация</a>
             </div>
@@ -85,7 +85,7 @@
           </table>
           <hr class="cart__line">
           <div class="cart__result">Итого: <span>750 руб.</span></div>
-          <input class="btn btn--user-block" type="submit" name="send" id="send" value="Оформить заказ">
+          <input class="btn cart__btn" type="submit" name="cart-send" id="cart-send" value="Оформить заказ">
         </div>
       </div>
 
@@ -115,7 +115,7 @@
               Крем-брюле и пломбир
               с малиновым джемом
             </h2>
-            <a class="btn  btn--slider" href="#">Дайте оба!</a>
+            <a class="btn  slider__btn" href="#">Дайте оба!</a>
           </div>
 
           <div class="slider__slide  slider__slide--2">
@@ -123,7 +123,7 @@
               Шоколадный пломбир
               и лимонный сорбет
             </h2>
-            <a class="btn  btn--slider" href="#">Дайте оба!</a>
+            <a class="btn  slider__btn" href="#">Дайте оба!</a>
           </div>
 
           <div class="slider__slide  slider__slide--3">
@@ -131,7 +131,7 @@
               Пломбир с помадкой
               и клубничный щербет
             </h2>
-            <a class="btn  btn--slider" href="#">Дайте оба!</a>
+            <a class="btn  slider__btn" href="#">Дайте оба!</a>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
             При покупке 2 кг любого фруктового мороженого, добавим
             в ваш заказ банку малинового варенья бесплатно.
           </p>
-          <a class="btn  btn--gift" href="#">Хочу варенье!</a>
+          <a class="btn  gift__btn" href="#">Хочу варенье!</a>
         </div>
 
         <div class="gift  gift--right">
@@ -154,7 +154,7 @@
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку
             вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a class="btn  btn--gift" href="#">Хочу шоколадки!</a>
+          <a class="btn  gift__btn" href="#">Хочу шоколадки!</a>
         </div>
       </div>
 
@@ -165,25 +165,25 @@
           <img src="#" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">310 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <a class="btn btn--catalog-item" href="#">Быстрый просмотр</a>
+          <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item catalog-item--hit">
           <img src="#" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">380 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочно-кофейное с кусочками шоколада</p>
-          <a class="btn btn--catalog-item" href="#">Быстрый просмотр</a>
+          <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item catalog-item--hit">
           <img src="#" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">310 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a class="btn btn--catalog-item" href="#">Быстрый просмотр</a>
+          <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item catalog-item--hit">
           <img src="#" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">415 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочное крем-брюле с карамельной подливкой</p>
-          <a class="btn btn--catalog-item" href="#">Быстрый просмотр</a>
+          <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
         </div>
       </div>
 
@@ -239,7 +239,7 @@
           </p>
           <form class="subscribe__form" action="/echo" method="post">
             <input class="subscribe__input" type="text" id="email-send" name="email-send" placeholder="Электронная почта" required>
-            <button class="btn btn--subscribe">Отправить</button>
+            <button class="btn  subscribe__btn">Отправить</button>
           </form>
         </div>
       </div>
@@ -263,7 +263,7 @@
           <b class="phone">8 812 450-25-25</b><br>
           (с 10 до 20 ежедневно)
         </p>
-        <a class="btn btn--map" href="#">Форма обратной связи</a>
+        <a class="btn  map__btn" href="#">Форма обратной связи</a>
       </div>
     </div>
   </main>
