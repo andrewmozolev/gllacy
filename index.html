@@ -8,11 +8,14 @@
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
+        <input class="slider__input" type="radio" name="toggle" id="toggle-1" checked>
+        <input class="slider__input" type="radio" name="toggle" id="toggle-2">
+        <input class="slider__input" type="radio" name="toggle" id="toggle-3">
   <header class="main-header">
     <div class="container">
 
 
-      <img class="main-logo" src="img/logo.png" alt="gllacy" width="154" height="64">
+      <img class="main-logo" src="img/logo.svg" alt="gllacy" width="154" height="64">
 
 
       <nav class="navigation">
@@ -54,17 +57,15 @@
 
 
         <a class="functions__link  functions__link--search" href="#">Вход</a>
-        <div class="user-block">
-          <form action="/echo" method="post">
-            <input class="user-block__input" type="text" name="email" id="email"  placeholder="Электронная почта">
-            <input class="user-block__input" type="password" name="password" id="password"  placeholder="Пароль">
-            <div class="user-block__buttons">
-              <input class="btn btn--user-block" type="submit" name="user-send" id="user-send" value="Войти">
-              <a class="user-block__link" href="#">Забыли пароль?</a>
-              <a class="user-block__link" href="#">Новая регистрация</a>
-            </div>
-          </form>
-        </div>
+        <form class="user-block" action="/echo" method="post">
+          <input class="user-block__input" type="text" name="email" id="email"  placeholder="Электронная почта">
+          <input class="user-block__input" type="password" name="password" id="password"  placeholder="Пароль">
+          <div class="user-block__buttons">
+            <input class="btn btn--user-block" type="submit" name="user-send" id="user-send" value="Войти">
+            <a class="user-block__link" href="#">Забыли пароль?</a>
+            <a class="user-block__link" href="#">Новая регистрация</a>
+          </div>
+        </form>
 
 
         <a class="functions__link functions__link--cart" href="#"><span>2</span>товара</a>
@@ -104,9 +105,7 @@
 
 
       <div class="slider">
-        <input class="slider__input" type="radio" name="toggle" id="toggle-1" checked>
-        <input class="slider__input" type="radio" name="toggle" id="toggle-2">
-        <input class="slider__input" type="radio" name="toggle" id="toggle-3">
+
         <div class="slider__controls">
           <label class="slider__toggle" for="toggle-1"></label>
           <label class="slider__toggle" for="toggle-2"></label>
@@ -166,25 +165,25 @@
       <div class="hits">
 
         <div class="catalog-item catalog-item--hit">
-          <img src="#" alt="" class="catalog-item__image" width="267" height="267">
+          <img src="img/img_product-1.png" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">310 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item catalog-item--hit">
-          <img src="#" alt="" class="catalog-item__image" width="267" height="267">
+          <img src="img/img_product-2.png" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">380 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочно-кофейное с кусочками шоколада</p>
           <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item catalog-item--hit">
-          <img src="#" alt="" class="catalog-item__image" width="267" height="267">
+          <img src="img/img_product-3.png" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">310 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="catalog-item catalog-item--hit">
-          <img src="#" alt="" class="catalog-item__image" width="267" height="267">
+          <img src="img/img_product-4.png" alt="" class="catalog-item__image" width="267" height="267">
           <span class="catalog-item__price">415 <i>Р</i>/кг</span>
           <p class="catalog-item__discription">Сливочное крем-брюле с карамельной подливкой</p>
           <a class="btn catalog-item__btn" href="#">Быстрый просмотр</a>
@@ -252,7 +251,7 @@
 
     <div class="map">
       <span class="map__logo"></span>
-      <img class="map__image" src="img/map.jpg" alt="map">
+      <img class="map__image" src="img/img_map.jpg" alt="map">
       <div class="map__popup">
         <p class="map__text">
           Адрес главного офиса и
@@ -298,7 +297,7 @@
 
 
       <div class="copyright">
-        <a href="#"><img class="copyright__image" src="img/htmlacademy.png" alt="htmacademy"></a>
+        <a href="#"><img class="copyright__image" src="img/logo_copyright-htmlacademy.svg" alt="htmacademy"></a>
         <p class="copyright__text">Сделано в <a class="copyright__link" href="#">HTML Academy</a> &#169; 2016</p>
       </div>
     </div>
