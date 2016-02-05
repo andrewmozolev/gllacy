@@ -1,0 +1,13 @@
+.gift {
+  display: flex;
+
+
+  &__item {
+    width: 48.85%;
+  }
+
+
+  &__item--left {
+    margin-right: 2.3%;
+  }
+}

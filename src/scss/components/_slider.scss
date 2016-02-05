@@ -1,0 +1,8 @@
+.slider {
+  height: 565px;
+
+  &__slide--1,
+  &__slide--2 {
+    display: none;
+  }
+}

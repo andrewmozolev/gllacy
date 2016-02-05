@@ -1,0 +1,19 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 23.35%;
+    margin-right: 2.2%;
+  }
+
+
+  &__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+
+  &__item-image {
+    width: 100%;
+  }
+}

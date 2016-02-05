@@ -1,0 +1,13 @@
+.page-header {
+  margin-top: 10px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+  width: 154px;
+  margin-right: 16px;
+  }
+}
