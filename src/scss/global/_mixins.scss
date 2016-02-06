@@ -5,3 +5,136 @@
     clear: both;
   }
 }
+
+@mixin container {
+  min-width: $min-w;
+  max-width: $max-w;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+@mixin m-p-0 {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-null {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin input-null {
+  border: none;
+  outline: none;
+  &:hover,
+  &:focus {
+  outline: none;
+  }
+}
+
+@mixin input {
+  position: relative;
+  border: $bd-input;
+  border-radius: $bdrs;
+  font-size: 16px;
+  font-weight: $font-w--bold;
+  text-overflow: ellipsis;
+  color: #353535;
+
+  &:hover {
+    border: $bd-input--hover;
+  }
+
+
+  &:focus {
+    border: $bd-input--focus;
+  }
+
+
+  &::-webkit-input-placeholder {
+    color: #9b9b9b;
+    text-overflow:ellipsis;
+    opacity: 1;
+    font-weight: $font-w--regular;
+    font-size: 16px;
+    line-height: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.29s;
+  }
+
+
+  &::-moz-placeholder {
+    color: #9b9b9b;
+    text-overflow:ellipsis;
+    opacity: 1;
+    font-weight: $font-w--regular;
+    font-size: 16px;
+    // line-height: 16px;
+    transition: all 0.5s ease;
+  }
+
+
+  &:-moz-placeholder {
+    color: #9b9b9b;
+    text-overflow:ellipsis;
+    opacity: 1;
+    font-weight: $font-w--regular;
+    font-size: 16px;
+    // line-height: 16px;
+    transition: all 0.5s ease;
+  }
+
+
+  &:-ms-input-placeholder {
+    color: #9b9b9b;
+    text-overflow:ellipsis;
+    opacity: 1;
+    font-weight: $font-w--regular;
+    font-size: 16px;
+    // line-height: 16px;
+    transition: all 0.5s ease;
+  }
+
+
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+    line-height: 1px;
+    font-size: 13px;
+    color: #5b9ddf;
+    vertical-align: top;
+    transition: all 0.3s ease;
+  }
+
+
+  &:focus::-moz-placeholder {
+    opacity: 0;
+    line-height: 1px;
+    font-size: 13px;
+    color: #5b9ddf;
+    vertical-align: top;
+    transition: all 0.5s ease;
+  }
+
+
+  &:focus:-moz-placeholder {
+    opacity: 0;
+    line-height: 1px;
+    font-size: 13px;
+    color: #5b9ddf;
+    vertical-align: top;
+    transition: all 0.5s ease;
+  }
+
+
+  &:focus:-ms-input-placeholder {
+    opacity: 0;
+    line-height: 1px;
+    font-size: 13px;
+    color: #5b9ddf;
+    vertical-align: top;
+    transition: all 0.5s ease;
+  }
+}
+
+

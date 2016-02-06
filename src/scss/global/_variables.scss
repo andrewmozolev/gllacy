@@ -1,4 +1,42 @@
-$c_base: #000;
+//  Colors
 
-$bg_base: #849d8f;
-$bg_base-2: #fff;
+$c_base: #000;
+$c_white: #fff;
+$c_black: #333;
+
+
+$c_link: #333;
+$c_link--hover: #ec593c;
+
+
+//  Backgrounds
+
+$bg_base-green: #849d8f;
+$bg_base-blue: #8996a6;
+$bg_base-red: #9d8b84;
+
+$bg_form: #f8f7f4;
+
+
+//  Box-Shadow Border
+
+$shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+$bdrs:5px;
+
+$bd_input: 1px solid #d3d3d2;
+$bd_input--hover: 2px solid #c7c6c5;
+$bd_input--focus: 2px solid #8fbdec;
+
+//  Fonts
+
+$font-family: "Roboto", Arial, sans-serif;
+$font-family--main: $font-family;
+$font-w--regular: 400;
+$font-w--medium: 500;
+$font-w--bold: 700;
+$font-w--black: 900;
+
+//  Sizes
+
+$min-w: 900px;
+$max-w: 1200px;
