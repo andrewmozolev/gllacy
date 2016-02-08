@@ -3,8 +3,11 @@
   flex-wrap: wrap;
 
   &__item {
+    position: relative;
     width: 23.35%;
     margin-right: 2.2%;
+    padding-bottom: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
   }
 
 
@@ -13,7 +16,90 @@
   }
 
 
+  &__item--hit::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background-image: url(../img/icon_product-hit.png);
+    background-repeat: no-repeat;
+  }
+
+
   &__item-image {
     width: 100%;
+  }
+
+
+  &__img-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  &__item-price {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 45px;
+    color: $c_white;
+    font-weight: $font-w--bold;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+  }
+
+
+  &__item-discription {
+    position: relative;
+    text-align: center;
+    padding: 0 8px;
+    font-size: 16px;
+    line-height: 22px;
+    color: $c_white;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+  }
+
+
+  &__item-btn {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  &__item:hover &__item-discription {
+    text-decoration: none;
+  }
+
+
+  &__item:hover &__item-btn {
+    display: block;
+  }
+
+  &__item:hover {
+    z-index: 0;
+    cursor: pointer;
+    margin-bottom: -45px;
+    padding-bottom: 15px;
+  }
+
+  &__item:hover::after {
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 105%;
+    height: 105%;
+    transform:translate(-50%, -50%);
+    border-radius: $bdrs;
+    background-color: rgba(248, 247, 244, 0.3);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
   }
 }

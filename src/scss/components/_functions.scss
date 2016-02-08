@@ -47,6 +47,7 @@
     padding: 7px;
     height: 32px;
     width: 100%;
+    text-align: left;
     border-radius: 16px;
     text-decoration: none;
     font-weight: $font-w--medium;
@@ -90,6 +91,27 @@
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+  }
+  &__icon--cart-full {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    display: none;
+    width: 21px;
+    height: 20px;
+    transform: translateY(-50%);
+    background-image: url(../img/icon_cart--full.png);
+    background-repeat: no-repeat;
+  }
+
+
+  &__item:hover &__icon--cart-full {
+    display: block;
+  }
+
+
+  &__item:hover &__icon--cart {
+    display: none;
   }
 
 
@@ -141,19 +163,9 @@
 
   &__item-link--singin {
     min-width: 92px;
-    padding-right: 16px;
+    padding-left: 44px;
+    padding-right: 10px;
   }
-
-
-  // &__singin-icon {
-  //   position: absolute;
-  //   top: 6px;
-  //   left: 17px;
-  //   width: 21px;
-  //   height: 21px;
-  //   background-image: url(../img/icon_singin.svg);
-  //   background-repeat: no-repeat;
-  // }
 
 
   &__singin-form {
@@ -272,27 +284,31 @@
 
 
   &__item-link--cart {
-    width: 117px;
-    padding-right: 34px;
+    min-width: 117px;
+    padding-left: 45px;
+    padding-right: 10px;
   }
 
 
-  // &__cart-icon {
-  //   position: absolute;
-  //   top: 6px;
-  //   left: 17px;
-  //   width: 21px;
-  //   height: 21px;
-  //   background-image: url(../img/icon_cart.svg);
-  //   background-repeat: no-repeat;
-  // }
+  &__cart-full {
+    display: none;
+  }
+
+
+  &__item:hover &__cart-full {
+    display: block;
+  }
+
+
+  &__item:hover &__cart-empty {
+    display: none;
+  }
 
 
   &__cart-form {
     position: absolute;
     top: 36px;
     right: 0;
-    // display: block;
     width: 540px;
     min-height: 239px;
     padding: 15px;
@@ -311,7 +327,6 @@
     font-size: 13px;
     font-weight: $font-w--regular;
     color: $c_black;
-    // border: 1px solid red;
   }
 
 
@@ -319,6 +334,19 @@
     padding: 12px 5px;
   }
 
+
+  &__cart-del {
+    fill:#353535;
+    fill-rule:evenodd;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+
+  &__cart-del:hover {
+    height: 11px;
+    width: 11px;
+  }
 
   &__cart-td:nth-child(1) {
     width: 27px;
@@ -330,7 +358,6 @@
     position: relative;
     width: 280px;
     padding-left: 46px;
-    // background-color: #ccc;
   }
 
 
@@ -343,9 +370,16 @@
   &__cart-td:nth-child(4) {
     width: 83px;
     text-align: center;
-    // background-color: #ccc;
   }
 
+
+  &__cart-link {
+    color: $c_black;
+    text-decoration: none;
+  }
+  &__cart-link:hover {
+    text-decoration: underline;
+  }
 
   &__cart-img {
     position: absolute;

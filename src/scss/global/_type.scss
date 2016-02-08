@@ -44,6 +44,7 @@ hr {
 }
 .container {
   @include container;
+  position: relative;
 
   &__wrap {
     padding-left: 2.3%;

@@ -91,6 +91,7 @@
   &__sub-list {
     @include list-null;
     position: absolute;
+    z-index: 2;
     top: 37px;
     left: -7px;
     display: none;
