@@ -34,6 +34,47 @@
     top: 65px;
     right: 0;
     width: 302px;
+    min-height: 305px;
+    padding-top: 29px;
+    padding-bottom: 31px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
     background-color: #fff;
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: $font-w--regular;
+    color: #343434;
+  }
+
+
+  &__text:last-of-type {
+    margin-bottom: 25px;
+  }
+
+
+  &__adress,
+  &__phone {
+    display: block;
+    margin-top: 3px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #343434;
+    font-weight: $font-w--bold;
+  }
+
+
+  &__phone {
+    margin-bottom: 3px;
+  }
+
+
+  &__map {
+
   }
 }

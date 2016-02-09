@@ -1,0 +1,39 @@
+.footer-nav {
+  display: flex;
+  margin-top: 30px;
+
+  &__list {
+    @include list-null;
+
+  }
+
+
+  &__list:first-child {
+    margin-right: 35px;
+  }
+
+
+  &__item {
+
+  }
+
+
+  &__link {
+    @include link-white;
+    position: relative;
+    font-size: 13px;
+  }
+
+
+  &__link--like::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -19px;
+    width: 15px;
+    height: 13px;
+    transform:translateY(-50%);
+    background-image: url(../img/icon_heart.svg);
+    background-repeat: no-repeat;
+  }
+}

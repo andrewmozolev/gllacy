@@ -1,0 +1,32 @@
+.footer-copyright {
+  width: 267px;
+  margin-top: 19px;
+  display: flex;
+  flex-direction:row-reverse;
+
+  &__wrap {
+
+  }
+
+
+  &__link-image {
+
+  }
+
+
+  &__image {
+  margin-bottom: 4px;
+  }
+
+
+  &__text {
+    font-size: 12px;
+    font-weight: $font-w--regular;
+    color: #fefefe;
+  }
+
+
+  &__link {
+    @include link-white;
+  }
+}

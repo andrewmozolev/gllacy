@@ -5,8 +5,13 @@ $c_white: #fff;
 $c_black: #333;
 
 
-$c_link: #333;
-$c_link--hover: #ec593c;
+$c_link: #333;//заменить
+$c_link--hover: #ec593c;//заменить
+
+$c_link-hover--white: #ffbc9e;
+$c_link-hover--black: #ec593c;
+$c_link--white: $c_white;
+$c_link--black: $c_black;
 
 
 //  Backgrounds
@@ -27,6 +32,12 @@ $bdrs:5px;
 $bd_input: 1px solid #d3d3d2;
 $bd_input--hover: 2px solid #c7c6c5;
 $bd_input--focus: 2px solid #8fbdec;
+
+$bd_link--white: 1px solid rgba(255, 255, 255, 0.3);
+$bd_link--black: 1px solid rgba(0, 0, 0, 0.3);
+$bd_link-hover--white: 1px solid rgba(249, 172, 159, 0.3);
+$bd_link-hover--black: 1px solid rgba(236, 89, 60, 0.3);
+
 
 //  Fonts
 

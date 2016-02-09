@@ -1,14 +1,134 @@
 .info {
   display: flex;
+  margin-bottom: 40px;
+  min-height: 220px;
 
 
   &__blog {
     width: 48.85%;
     margin-right: 2.3%;
+    padding: 20px;
+    padding-top: 24px;
+    border-radius: 13px;
+    background-image: url(../img/bg_info-blog.png);
+    background-size: cover;
+    background-position: right 0 top 0;
+    background-repeat: no-repeat;
+  }
+
+
+  &__blog-wrap {
+    max-width: 300px;
+  }
+
+
+  &__blog-title {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: $font-w--medium;
+    color: #5a5a5a;
+  }
+
+
+  &__blog-link {
+    font-size: 24px;
+    line-height: 1.27;
+    font-weight: $font-w--bold;
+    color: #353535;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+  }
+
+  &__blog-link:hover {
+    color: $c_link--hover;
   }
 
 
   &__subscribe {
+    display: flex;
     width: 48.85%;
+    padding: 6px;
+    border-radius: 13px;
+    background-color: #f8f7f4;
+    background-image: url(../img/bg_info-subscribe.png);
+    background-repeat: repeat;
   }
+
+  &__subscribe-wrap {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 29px;
+    padding-bottom: 33px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    background-color: #f8f7f4;
+  }
+
+
+  &__subscribe-text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: $font-w--regular;
+    color: #5a5a5a;
+  }
+
+&__subscribe-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+  &__input {
+    @include input-null;
+    @include input;
+    width: 100%;
+    height: 44px;
+    padding: 0 11px;
+    font-size: 14px;
+  }
+
+
+  &__input:hover,
+  &__input:focus {
+    padding: 0 10px;
+  }
+
+
+  &__input-label {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+
+  &__input-name {
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    left: 11px;
+    display: block;
+    max-width: 100%;
+    font-size: 13px;
+    opacity: 0;
+    color: #5b9ddf;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+  }
+
+  &__input:focus + &__input-name {
+    z-index: 2;
+    font-size: 11px;
+    opacity: 1;
+    transform: translateY(-20px)
+  }
+
+
+  &__input:not(:placeholder-shown) + &__input-name {
+    color: #9a9a9a;
+  }
+
 }

@@ -86,8 +86,12 @@
                   <div class="functions__singin-buttons">
                     <input class="btn btn--singin" type="submit" name="user-send" id="user-send" value="Войти">
                     <div class="functions__singin-links">
-                      <a class="functions__singin-link" href="#">Забыли пароль?</a>
-                      <a class="functions__singin-link" href="#">Новая регистрация</a>
+                      <div class="functions__singin-wrap">
+                        <a class="functions__singin-link" href="#">Забыли пароль?</a>
+                      </div>
+                      <div class="functions__singin-wrap">
+                        <a class="functions__singin-link" href="#">Новая регистрация</a>
+                      </div>
                     </div>
                   </div>
                 </form>
@@ -216,11 +220,13 @@
 
 
 
-          <div class="catalog">
+          <div class="catalog  catalog--main">
             <div class="catalog__item  catalog__item--hit">
               <div class="catalog__img-wrap">
                 <img class="catalog__item-image" src="img/img_product-1.png" alt="">
-                <span class="catalog__item-price">310 <b>₽</b>/кг</span>
+                <div class="catalog__price-wrap">
+                  <span class="catalog__item-price">310<b class="catalog__rub-hide">Р</b></span><span class="catalog__kilo">/кг</span>
+                </div>
               </div>
               <p class="catalog__item-discription">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               <div class="catalog__item-btn"><a class="btn  btn--catalog-item" href="#">Быстрый просмотр</a></div>
@@ -228,7 +234,9 @@
             <div class="catalog__item  catalog__item--hit">
               <div class="catalog__img-wrap">
                 <img class="catalog__item-image" src="img/img_product-2.png" alt="">
-                <span class="catalog__item-price">380 <i>Р</i>/кг</span>
+                <div class="catalog__price-wrap">
+                  <span class="catalog__item-price">380<b class="catalog__rub-hide">Р</b></span><span class="catalog__kilo">/кг</span>
+                </div>
               </div>
               <p class="catalog__item-discription">Сливочно-кофейное с кусочками шоколада</p>
               <div class="catalog__item-btn"><a class="btn  btn--catalog-item" href="#">Быстрый просмотр</a></div>
@@ -236,7 +244,9 @@
             <div class="catalog__item  catalog__item--hit">
               <div class="catalog__img-wrap">
                 <img class="catalog__item-image" src="img/img_product-3.png" alt="">
-                <span class="catalog__item-price">310 <i>Р</i>/кг</span>
+                <div class="catalog__price-wrap">
+                  <span class="catalog__item-price">355<b class="catalog__rub-hide">Р</b></span><span class="catalog__kilo">/кг</span>
+                </div>
               </div>
               <p class="catalog__item-discription">Сливочно-клубничное с присыпкой из белого шоколада</p>
               <div class="catalog__item-btn"><a class="btn  btn--catalog-item" href="#">Быстрый просмотр</a></div>
@@ -244,7 +254,9 @@
             <div class="catalog__item  catalog__item--hit">
               <div class="catalog__img-wrap">
                 <img class="catalog__item-image" src="img/img_product-4.png" alt="">
-                <span class="catalog__item-price">415 <i>Р</i>/кг</span>
+                <div class="catalog__price-wrap">
+                  <span class="catalog__item-price">415<b class="catalog__rub-hide">Р</b></span><span class="catalog__kilo">/кг</span>
+                </div>
               </div>
               <p class="catalog__item-discription">Сливочное крем-брюле с карамельной подливкой</p>
               <div class="catalog__item-btn"><a class="btn  btn--catalog-item" href="#">Быстрый просмотр</a></div>
@@ -256,7 +268,7 @@
 
           <div class="about-us">
             <h1 class="about-us__title">
-              Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного
+              Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного
               производства на развес
             </h1>
             <div class="about-us__wrap">
@@ -293,23 +305,30 @@
 
           <div class="info">
             <div class="info__blog">
-              <b class="info__blog-title">Новое в нашем блоге</b>
-              <a class="info__blog-link" href="#">
-                10  способов сервировки
-                фруктовых щербетов
-                к столу
-              </a>
+              <div class="info__blog-wrap">
+                <span class="info__blog-title">Новое в нашем блоге</span>
+                <a class="info__blog-link" href="#">
+                  10  способов сервировки
+                  фруктовых щербетов
+                  к&nbsp;столу
+                </a>
+              </div>
             </div>
             <div class="info__subscribe">
-              <p class="info__subscribe-text">
-                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-                всего самого вкусного, что у нас происходит. Обещаем не спамить
-                и не слать всякой не нужной ерунды. Честно =)
-              </p>
-              <form class="info__subscribe-form" action="/echo" method="post">
-                <input class="info__subscribe-input" type="text" id="email-send" name="email-send" placeholder="Электронная почта" required>
-                <button class="btn  btn--subscribe">Отправить</button>
-              </form>
+              <div class="info__subscribe-wrap">
+                <p class="info__subscribe-text">
+                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                  всего самого вкусного, что у нас происходит. Обещаем не спамить
+                  и не слать всякой не нужной ерунды. Честно =)
+                </p>
+                <form class="info__subscribe-form" action="/echo" method="post">
+                  <label class="info__input-label" for="search">
+                    <input class="info__input  info__input--subscribe" type="text" id="email-send" name="email-send" placeholder="Электронная почта" required>
+                    <span class="info__input-name">Электронная почта</span>
+                  </label>
+                  <button class="btn  btn--subscribe">Отправить</button>
+                </form>
+              </div>
             </div>
           </div>
 
@@ -328,7 +347,7 @@
             <div class="map__contact">
               <p class="map__text">
                 Адрес главного офиса и
-                офлайн магазина:<br>
+                офлайн&nbsp;магазина:<br>
                 <b class="map__adress">
                   ул. Большая Конюшенная
                   19/8, Санкт-Петербург
@@ -336,10 +355,12 @@
               </p>
               <p class="map__text">
                 Для заказов по телефону:<br>
-                <b class="phone">8 812 450-25-25</b><br>
+                <b class="map__phone">8 812 450-25-25</b>
                 (с 10 до 20 ежедневно)
               </p>
-              <a class="btn  map__btn" href="#">Форма обратной связи</a>
+              <div class="map__btn">
+                <a class="btn  btn--map" href="#">Форма обратной связи</a>
+              </div>
             </div>
 
           </div>
@@ -356,30 +377,40 @@
           <div class="main-footer__wrap">
 
             <div class="footer-social">
-              <a class="footer-social__link  footer-social__link--tw" href="#">Twitter</a>
-              <a class="footer-social__link  footer-social__link--inst" href="#">Instagram</a>
-              <a class="footer-social__link  footer-social__link--fb" href="#">Facebook</a>
-              <a class="footer-social__link  footer-social__link--vk" href="#">Vkontakte</a>
+              <div class="footer-social__link-wrap">
+                <a class="footer-social__link  footer-social__link--tw" href="#">Twitter</a>
+              </div>
+              <div class="footer-social__link-wrap">
+                <a class="footer-social__link  footer-social__link--inst" href="#">Instagram</a>
+              </div>
+              <div class="footer-social__link-wrap">
+                <a class="footer-social__link  footer-social__link--fb" href="#">Facebook</a>
+              </div>
+              <div class="footer-social__link-wrap">
+                <a class="footer-social__link  footer-social__link--vk" href="#">Vkontakte</a>
+              </div>
             </div>
 
 
             <div class="footer-nav">
               <ul class="footer-nav__list">
                 <li class="footer-nav__item"><a href="#" class="footer-nav__link  footer-nav__link--like">Для поставщиков</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link  footer-nav__link--like">О производстве</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">О производстве</a></li>
               </ul>
               <ul class="footer-nav__list">
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link  footer-nav__link--like">Наши документы</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link  footer-nav__link--like">Экологические стандарты</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Наши документы</a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Экологические стандарты</a></li>
               </ul>
             </div>
 
 
             <div class="footer-copyright">
-              <a class="footer-copyright__link-image" href="#">
-                <img class="footer-copyright__image" src="img/logo_copyright-htmlacademy.svg" alt="htmacademy">
-              </a>
-              <p class="footer-copyright__text">Сделано в <a class="footer-copyright__link" href="#">HTML Academy</a> &#169; 2016</p>
+              <div class="footer-copyright__wrap">
+                <a class="footer-copyright__link-image" href="#">
+                  <img class="footer-copyright__image" src="img/logo_copyright-htmlacademy.svg" alt="htmacademy">
+                </a>
+                <p class="footer-copyright__text">Сделано в <a class="footer-copyright__link" href="#">HTML Academy</a> &#169; 2016</p>
+              </div>
             </div>
           </div>
         </div>

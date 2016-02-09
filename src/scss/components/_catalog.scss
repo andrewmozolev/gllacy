@@ -1,12 +1,18 @@
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  align-items:flex-start;
+
+
+
+  &--main {
+    margin-bottom: 38px;
+  }
 
   &__item {
     position: relative;
     width: 23.35%;
     margin-right: 2.2%;
-    padding-bottom: 20px;
     transition: background-color 0.3s, box-shadow 0.3s;
   }
 
@@ -37,19 +43,49 @@
   &__img-wrap {
     position: relative;
     z-index: 1;
+    margin-bottom: 8px;
   }
 
 
-  &__item-price {
+  &__price-wrap {
     position: absolute;
     left: 0;
-    bottom: 15px;
+    bottom: 12px;
     font-size: 45px;
     color: $c_white;
     font-weight: $font-w--bold;
     text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
   }
 
+
+  &__rub-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+
+
+  &__item-price {
+    white-space: nowrap;
+  }
+
+
+  &__item-price::after {
+    margin-right: 3px;
+    margin-left: 5px;
+    content:"\e806";
+    font-family: "fontello";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+  &__kilo {
+    font-size: 30px;
+  }
 
   &__item-discription {
     position: relative;
@@ -85,8 +121,8 @@
   &__item:hover {
     z-index: 0;
     cursor: pointer;
-    margin-bottom: -45px;
-    padding-bottom: 15px;
+    margin-bottom: -65px;
+    padding-bottom: 65px;
   }
 
   &__item:hover::after {

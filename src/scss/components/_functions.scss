@@ -245,41 +245,16 @@
 
 
   &__singin-links {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
     margin-left: 19px;
     font-size: 13px;
   }
 
 
   &__singin-link {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    color: $c_link;
-  }
-
-
-  &__singin-link:hover,
-  &__singin-link:active {
-    color: $c_link--hover;
-  }
-
-
-
-  &__singin-link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-
-  &__singin-link:hover::after,
-  &__singin-link:active::after {
-    background-color: rgba(236, 89, 60, 0.3);
+    @include link-black;
   }
 
 

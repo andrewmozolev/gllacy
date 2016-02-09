@@ -29,7 +29,7 @@
   outline: none;
   &:hover,
   &:focus {
-  outline: none;
+    outline: none;
   }
 }
 
@@ -137,4 +137,30 @@
   }
 }
 
+@mixin link-white {
+  display: inline;
+  color: $c_link--white;
+  text-decoration: none;
+  border-bottom: $bd_link--white;
 
+
+  &:hover,
+  &:active {
+    color: $c_link-hover--white;
+    border-bottom: $bd_link-hover--white;
+  }
+}
+
+@mixin link-black {
+  display: inline;
+  color: $c_link--black;
+  text-decoration: none;
+  border-bottom: $bd_link--black;
+
+
+  &:hover,
+  &:active {
+    color: $c_link-hover--black;
+    border-bottom: $bd_link-hover--black;
+  }
+}

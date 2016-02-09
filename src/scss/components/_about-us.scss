@@ -1,4 +1,22 @@
 .about-us {
+  background-image: url(../img/bg_aboutus.jpg);
+  background-repeat: repeat;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 15px;
+  border-radius: 13px;
+
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: $font-w--medium;
+    line-height: 30px;
+    color: #323232;
+  }
 
 
   &__wrap {
@@ -13,5 +31,46 @@
 
   &__column--left {
     margin-right: 2.3%;
+  }
+
+
+  &__feature {
+    position: relative;
+    margin-bottom: 9px;
+    padding-top: 12px;
+    padding-left: 56px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+  }
+
+  &__feature::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 49px;
+    height: 49px;
+    background-repeat: no-repeat;
+  }
+
+
+  &__feature--icecream::before {
+    background-image: url(../img/icon_aboutus-icecream.svg);
+  }
+
+
+  &__feature--natural::before {
+    background-image: url(../img/icon_aboutus-leaf.svg);
+  }
+
+
+  &__feature--cow::before {
+    background-image: url(../img/icon_aboutus-cow.svg);
+  }
+
+
+  &__feature--temp::before {
+    background-image: url(../img/icon_aboutus-temp.svg);
   }
 }
