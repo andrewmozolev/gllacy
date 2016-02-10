@@ -79,4 +79,14 @@
     font-size: 17px;
     line-height: 24px;
   }
+
+
+  &--writetous {
+    height: 44px;
+    max-width: 139px;
+    padding: 11px 26px;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: $font-w--bold;
+  }
 }

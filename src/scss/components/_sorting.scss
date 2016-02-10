@@ -1,0 +1,85 @@
+.sorting {
+
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 38px;
+  }
+
+  &__item {
+    position: relative;
+    height: 36px;
+    margin-right: 16px;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: $font-w--medium;
+    color: $c_white;
+    background-color: rgba(248, 247, 244, 0.2);
+  }
+
+
+  &__title {
+    position: absolute;
+    top: -20px;
+    left: 16px;
+    font-size: 14px;
+    color: $c_white;
+    font-weight: $font-w--medium;
+  }
+
+
+  &__item--options {
+    width: 193px;
+    padding-left: 16px;
+  }
+
+  &__select {
+    @include input-null;
+    width: 168px;
+    height: 36px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    // border-radius: 18px;
+    background-color: transparent;
+  }
+    &__select:hover {
+      color: #343434;
+    }
+    &__item--options:hover {
+    background-color: $c_white;
+    color: #343434;
+  }
+  &__item--range-filter {
+    width: 220px;
+  }
+
+
+  &__item--fat {
+    width: 415px;
+  }
+
+
+  &__fat-list {
+    @include list-null;
+    display: flex;
+  }
+
+
+  &__fat-item {
+
+  }
+
+
+  &__filler-list {
+    @include list-null;
+    display: flex;
+    width: 702px;
+  }
+
+
+  &__item--btn {
+    width: 144px;
+  }
+}

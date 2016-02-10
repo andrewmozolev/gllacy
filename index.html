@@ -30,7 +30,7 @@
                       <b class="navigation__sub-title">Новинки</b>
                     </li>
                     <li class="navigation__sub-item">
-                      <a class="navigation__sub-link" href="#">Сливочное</a>
+                      <a class="navigation__sub-link" href="catalog.html">Сливочное</a>
                     </li>
                     <li class="navigation__sub-item">
                       <a class="navigation__sub-link" href="#">Щербеты</a>
@@ -138,9 +138,9 @@
                   <input class="btn btn--cart" type="submit" name="cart-send" id="cart-send" value="Оформить заказ">
                 </div>
               </div>
-
+              <!-- //cart -->
             </div>
-
+            <!-- //functions -->
           </div>
           <!-- //page-header__top -->
         </div>
@@ -220,7 +220,7 @@
 
 
 
-          <div class="catalog  catalog--main">
+          <div class="catalog">
             <div class="catalog__item  catalog__item--hit">
               <div class="catalog__img-wrap">
                 <img class="catalog__item-image" src="img/img_product-1.png" alt="">
@@ -420,14 +420,29 @@
 
 
   <div class="popup-writetous">
-    <div class="popup-writetous-close"></div>
-    <p class="popup-writetous__title">Мы обязательно вам ответим!</p>
-    <form class="popup-writetous__form" action="/echo" method="post">
-      <input class="popup-writetous__name" type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут?">
-      <input class="popup-writetous__email" type="text" name="popup-email" id="popup-email" placeholder="Ваша почта для ответа?">
-      <textarea class="popup-writetous__textarea" id="textarea"  placeholder="Напишите что-нибудь..."></textarea>
-      <input class="btn  btn--writetous" type="submit" name="send" id="send" value="Отправить">
-    </form>
+    <div class="popup-writetous__wrap">
+      <div class="popup-writetous__close"></div>
+      <p class="popup-writetous__title">Мы обязательно вам ответим!</p>
+      <form class="popup-writetous__form" action="/echo" method="post">
+        <label class="popup-writetous__input-label" for="popup-name">
+          <input class="popup-writetous__input  popup-writetous__input--name" type="text" name="popup-name" id="popup-name" placeholder="Как вас зовут?">
+          <span class="popup-writetous__input-name">Как вас зовут?</span>
+        </label>
+
+        <label class="popup-writetous__input-label" for="popup-email">
+          <input class="popup-writetous__input  popup-writetous__input--email" type="text" name="popup-email" id="popup-email" placeholder="Ваша почта для ответа?">
+          <span class="popup-writetous__input-name">Ваша почта для ответа?</span>
+        </label>
+
+        <label class="popup-writetous__input-label  popup-writetous__input-label--textarea" for="popup-textarea">
+          <textarea class="popup-writetous__input  popup-writetous__input--textarea" id="popup-textarea"  placeholder="Напишите что-нибудь..."></textarea>
+          <span class="popup-writetous__input-name">Напишите что-нибудь...</span>
+        </label>
+        <div class="popup-writetous__btn">
+          <input class="btn  btn--writetous" type="submit" name="send" id="send" value="Отправить">
+        </div>
+      </form>
+    </div>
   </div>
 
   <script src="js/scripts.min.js"></script>

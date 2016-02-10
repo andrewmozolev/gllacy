@@ -12,12 +12,17 @@
     display: inline-block;
     vertical-align: top;
     height: 32px;
-    // margin: 0 14px;
     font-size: 16px;
     line-height: 1.3;
     font-weight: 500;
     border-radius: 16px;
     transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  &__link--active  {
+    background-color: #d07058;
+    cursor: default;
   }
 
 
@@ -48,33 +53,23 @@
   }
 
 
-  &__item:hover  &__link {
+  &__item:hover  &__link:not(.navigation__link--active) {
     color: $c_black;
   }
 
 
-  &__item &__link:active {
+  &__item &__link:not(.navigation__link--active):active {
     border-top-color: #696969;
   }
 
 
-  &__link-inner {
-    position: relative;
+  &__link:not(.navigation__link--active) &__link-inner {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
 
-  &__link-inner::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-  }
-
-
-  &__item:hover &__link-inner::before {
-    display: none;
+  &__item:hover &__link-inner {
+    border-bottom: none;
   }
 
 
@@ -115,7 +110,7 @@
   }
 
 
-  &__sub-link:last-of-type {
+  &__sub-item:last-of-type &__sub-link{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
   }
@@ -140,10 +135,17 @@
   }
 
 
-  &__sub-link:hover {
+  &__sub-link:not(.navigation__sub-link--active):hover {
     background-color: #fbded8;
   }
-  &__sub-link:active {
+
+
+  &__sub-link:not(.navigation__sub-link--active):active {
     background-color: #f6b5a5;
+  }
+
+  &__sub-link--active {
+    background-color: #d07058;
+    color: $c_white;
   }
 }

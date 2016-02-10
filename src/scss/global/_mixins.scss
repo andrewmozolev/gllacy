@@ -24,6 +24,14 @@
   padding: 0;
 }
 
+@mixin font-null {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
 @mixin input-null {
   border: none;
   outline: none;
@@ -49,6 +57,39 @@
 
   &:focus {
     border: $bd-input--focus;
+  }
+
+
+  &-label {
+    position: relative;
+    // flex-grow: 1;
+    margin-right: 10px;
+  }
+
+
+  &-name {
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: 17px;
+    display: block;
+    max-width: 100%;
+    font-size: 13px;
+    opacity: 0;
+    color: #5b9ddf;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+  }
+
+  &:focus + &-name {
+    z-index: 2;
+    font-size: 11px;
+    opacity: 1;
+    transform: translateY(-20px)
+  }
+
+  &:not(:placeholder-shown) + &-name {
+    color: #9a9a9a;
   }
 
 
