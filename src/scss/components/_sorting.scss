@@ -22,7 +22,7 @@
 
   &__title {
     position: absolute;
-    top: -20px;
+    top: -22px;
     left: 16px;
     font-size: 14px;
     color: $c_white;
@@ -32,25 +32,70 @@
 
   &__item--options {
     width: 193px;
-    padding-left: 16px;
-  }
-
-  &__select {
-    @include input-null;
-    width: 168px;
-    height: 36px;
-    padding-top: 6px;
-    padding-bottom: 10px;
-    // border-radius: 18px;
-    background-color: transparent;
-  }
-    &__select:hover {
-      color: #343434;
-    }
-    &__item--options:hover {
-    background-color: $c_white;
+    padding: 0;
+    border-radius: 30px;
+    font-size: 16px;
     color: #343434;
   }
+
+
+  &__select {
+    position: relative;
+    display: block;
+    height: 36px;
+    padding: 5px 8px;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: $font-w--medium;
+    text-indent: 0.01px;
+    text-overflow: "";
+    cursor: pointer;
+    color: $c_white;
+  }
+
+
+  &__select:-moz-focus-inner {
+    border:0;
+  }
+
+
+  &__select::-ms-expand {
+    display: none;
+  }
+
+
+  &__select:focus,
+  &__select:hover {
+    color: #343434;
+    background-color: #fff;
+  }
+
+
+  &__select-icon {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 13px;
+    border: 5px solid transparent;
+    border-top-color: #fff;
+    cursor: pointer;
+  }
+
+
+  &__select:focus + &__select-icon,
+  &__select:hover + &__select-icon {
+    border-top-color: #000;
+  }
+
+
   &__item--range-filter {
     width: 220px;
   }
