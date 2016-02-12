@@ -17,7 +17,9 @@
             <!-- Logo -->
             <div class="page-header__logo">
               <a class="page-header__logo-link" href="index.html">
-                <img class="page-header__logo-img" src="img/logo.svg" alt="gllacy" width="154" height="64">
+                <svg class="svg-logo  page-header__logo-svg">
+                  <use xlink:href="img/svg-sprite.svg#logo"></use>
+                </svg>
               </a>
             </div>
 
@@ -398,46 +400,81 @@
 
 
 
-    <footer class="main-footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="container__wrap">
 
-          <div class="main-footer__wrap">
+          <div class="page-footer__wrap">
 
             <div class="footer-social">
-              <div class="footer-social__link-wrap">
-                <a class="footer-social__link  footer-social__link--tw" href="#">Twitter</a>
-              </div>
-              <div class="footer-social__link-wrap">
-                <a class="footer-social__link  footer-social__link--inst" href="#">Instagram</a>
-              </div>
-              <div class="footer-social__link-wrap">
-                <a class="footer-social__link  footer-social__link--fb" href="#">Facebook</a>
-              </div>
-              <div class="footer-social__link-wrap">
-                <a class="footer-social__link  footer-social__link--vk" href="#">Vkontakte</a>
-              </div>
+
+              <a class="footer-social__link  footer-social__link--tw" href="#" title="Twitter">
+                Twitter
+                <svg class="footer-social__link-svg  svg-icon_social-twitter">
+                  <use xlink:href="img/svg-sprite.svg#icon_social-twitter"></use>
+                </svg>
+              </a>
+              <a class="footer-social__link  footer-social__link--inst" href="#" title="Instagram">
+                Instagram
+                <svg class="footer-social__link-svg  svg-icon_social-instagram">
+                  <use xlink:href="img/svg-sprite.svg#icon_social-instagram"></use>
+                </svg>
+              </a>
+              <a class="footer-social__link  footer-social__link--fb" href="#" title="Facebook">
+                Facebook
+                <svg class="footer-social__link-svg  svg-icon_social-facebook">
+                  <use xlink:href="img/svg-sprite.svg#icon_social-facebook"></use>
+                </svg>
+              </a>
+              <a class="footer-social__link  footer-social__link--vk" href="#" title="Vkontakte">
+                Vkontakte
+                <svg class="footer-social__link-svg  svg-icon_social-vkontakte">
+                  <use xlink:href="img/svg-sprite.svg#icon_social-vkontakte"></use>
+                </svg>
+              </a>
             </div>
 
 
             <div class="footer-nav">
               <ul class="footer-nav__list">
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link  footer-nav__link--like">Для поставщиков</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link">О производстве</a></li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link  footer-nav__link--like" title="Для поставщиков">
+
+                    <svg class="footer-nav__link-svg  svg-icon_heart">
+                      <use xlink:href="img/svg-sprite.svg#icon_heart"></use>
+                    </svg>
+                    Для поставщиков
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link" title="О производстве">
+                    О производстве
+                  </a>
+                </li>
               </ul>
               <ul class="footer-nav__list">
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Наши документы</a></li>
-                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Экологические стандарты</a></li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link" title="Наши документы">
+                    Наши документы
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link" title="Экологические стандарты">
+                    Экологические стандарты
+                  </a>
+                </li>
               </ul>
             </div>
 
 
             <div class="footer-copyright">
               <div class="footer-copyright__wrap">
-                <a class="footer-copyright__link-image" href="#">
-                  <img class="footer-copyright__image" src="img/logo_copyright-htmlacademy.svg" alt="htmacademy">
+                <a class="footer-copyright__link-image" href="https://htmlacademy.ru/" title="HTML Academy">
+                  <svg class="footer-copyright__link-svg  svg-logo_copyright-htmlacademy">
+                    <use xlink:href="img/svg-sprite.svg#logo_copyright-htmlacademy"></use>
+                  </svg>
                 </a>
-                <p class="footer-copyright__text">Сделано в <a class="footer-copyright__link" href="#">HTML Academy</a> &#169; 2016</p>
+                <p class="footer-copyright__text">Сделано в <a class="footer-copyright__link" href="https://htmlacademy.ru/" title="HTML Academy">HTML Academy</a> &#169; 2016</p>
               </div>
             </div>
 
@@ -450,7 +487,9 @@
 
   <div class="popup-writetous">
     <div class="popup-writetous__wrap">
-      <div class="popup-writetous__close"></div>
+      <svg class="popup-writetous__close  svg-icon_close">
+        <use xlink:href="img/svg-sprite.svg#icon_close"></use>
+      </svg>
       <p class="popup-writetous__title">Мы обязательно вам ответим!</p>
       <form class="popup-writetous__form" action="/echo" method="post">
         <label class="popup-writetous__input-label" for="popup-name">
@@ -475,5 +514,7 @@
   </div>
 
   <script src="js/scripts.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
 </body>
 </html>

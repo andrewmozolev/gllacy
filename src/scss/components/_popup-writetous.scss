@@ -13,7 +13,6 @@
   &__wrap {
     position: absolute;
     z-index: 1000;
-    // top: 338px;
     top: 50%;
     left: 50%;
     height: 442px;
@@ -28,29 +27,23 @@
   }
 
   &__close {
-    content:"";
     position: absolute;
     top: 15px;
     right: 15px;
     width: 19px;
     height: 19px;
-    background-image: url(../img/icon_close.svg);
-    background-repeat: no-repeat;
-    background-size: 18px;
-    background-position: center;
     cursor: pointer;
-    transition:transform 0.3s, background-size 0.3s;
+    transition:transform 0.3s;
+    fill:#000;
+    fill-rule:nonzero;
   }
-
-
   &__close:hover {
-    background-size: 19px;
-    transform: rotate(180deg);
+    transform: rotate(180deg) scale(1.2);
   }
 
 
   &__close:active {
-    background-size: 18px;
+    transform: rotate(180deg) scale(0.9);
   }
 
 
@@ -89,6 +82,7 @@
     left: 19px;
   }
 
+
   &__input:hover,
   &__input:focus {
     padding: 8px 20px;
@@ -123,5 +117,15 @@
 
   &__btn {
     align-self:flex-end;
+  }
+
+
+  &__show {
+    animation-name: popup-show;
+    animation-duration: 1s;
+  }
+
+  &__static {
+    display: block;
   }
 }

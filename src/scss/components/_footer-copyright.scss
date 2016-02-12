@@ -6,19 +6,14 @@
   flex-direction:row-reverse;
 
 
-
-  &__wrap {
-
+  &__link-svg {
+    fill: #fff;
+    margin-bottom: 3px;
+    margin-left: 2px;
   }
 
-
-  &__link-image {
-
-  }
-
-
-  &__image {
-  margin-bottom: 4px;
+  &__link-svg:hover {
+    fill: $c_link-hover--white;
   }
 
 

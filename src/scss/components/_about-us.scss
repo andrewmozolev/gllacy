@@ -44,33 +44,10 @@
     color: #323232;
   }
 
-  &__feature::before {
-    content:"";
+  &__svg {
     position: absolute;
     left: 0;
     top: 0;
-    width: 49px;
-    height: 49px;
-    background-repeat: no-repeat;
-  }
-
-
-  &__feature--icecream::before {
-    background-image: url(../img/icon_aboutus-icecream.svg);
-  }
-
-
-  &__feature--natural::before {
-    background-image: url(../img/icon_aboutus-leaf.svg);
-  }
-
-
-  &__feature--cow::before {
-    background-image: url(../img/icon_aboutus-cow.svg);
-  }
-
-
-  &__feature--temp::before {
-    background-image: url(../img/icon_aboutus-temp.svg);
+    fill: #323232;
   }
 }

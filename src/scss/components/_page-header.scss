@@ -8,10 +8,17 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+
   &__logo {
     position: relative;
-    left: -6px;
+    left: -5px;
     width: 154px;
     margin-right: 9px;
+  }
+
+
+  &__logo-svg {
+    fill:#fff;
   }
 }
