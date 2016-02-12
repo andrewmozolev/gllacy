@@ -75,11 +75,12 @@
     box-shadow:$shadow;
     background-color: $bg_form;
     transform: translate(50%,-50%) scale(0);
-    transition: transform 0.5s;
+    transition: transform 0.4s;
   }
 
   &:hover &__form {
     transform: translate(0,0) scale(1);
+    transition: transform 0.5s;
   }
 
   &__input {

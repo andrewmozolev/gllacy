@@ -116,12 +116,13 @@
     border-radius: $bdrs;
     background-color: $bg_form;
     box-shadow: $shadow;
-    transform: translate(40%,-50%) scale(0) rotate(-30deg);
-    transition: transform 0.5s;
+    transform: translate(50%,-50%) scale(0);
+    transition: transform 0.4s;
   }
 
   &:hover &__form {
-    transform: translate(0,0) scale(1) rotate(0deg);
+    transform: translate(0,0) scale(1);
+    transition: transform 0.5s;
   }
 
 
