@@ -48,7 +48,7 @@
 
 
   &--gift {
-    height: 45px;
+    min-height: 45px;
     min-width: 150px;
     padding: 10px 21px;
     font-size: 18px;
@@ -58,7 +58,7 @@
 
   &--catalog-item {
     min-width: 195px;
-    height: 35px;
+    min-height: 35px;
     padding: 8px 20px;
     font-size: 15px;
     font-weight: $font-w--bold;
@@ -66,7 +66,7 @@
 
 
   &--subscribe {
-    height: 44px;
+    min-height: 44px;
     padding: 10px 21px;
     font-size: 17px;
   }
@@ -76,13 +76,14 @@
     min-width: 254px;
     min-height: 44px;
     padding: 10px 30px;
+    margin-bottom: 21px;
     font-size: 17px;
     line-height: 24px;
   }
 
 
   &--writetous {
-    height: 44px;
+    min-height: 44px;
     max-width: 139px;
     padding: 11px 26px;
     font-size: 17px;

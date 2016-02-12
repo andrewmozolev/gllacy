@@ -62,7 +62,6 @@
 
   &-label {
     position: relative;
-    // flex-grow: 1;
     margin-right: 10px;
   }
 
@@ -70,7 +69,7 @@
   &-name {
     position: absolute;
     z-index: -1;
-    top: -5px;
+    top: -3px;
     left: 17px;
     display: block;
     max-width: 100%;

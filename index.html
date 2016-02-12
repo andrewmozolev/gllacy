@@ -56,89 +56,113 @@
             </nav>
             <!-- Functions -->
             <div class="functions">
+
               <!-- Search -->
               <div class="functions__item  functions__item--search">
-                <a class="functions__item-link  functions__item-link--search" href="#">
-                  <svg class="functions__icon  functions__icon--search" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="17" height="17" viewBox="0 0 17 17"><path d="M11.936 10.497h-.758l-.264-.26a6.166 6.166 0 0 0 1.497-4.03c0-3.425-2.778-6.2-6.205-6.2A6.202 6.202 0 0 0 0 6.207a6.202 6.202 0 0 0 10.24 4.703l.262.262v.755l4.773 4.76 1.423-1.422-4.762-4.768zm-5.73 0a4.294 4.294 0 0 1-4.298-4.29 4.294 4.294 0 0 1 4.297-4.293A4.293 4.293 0 0 1 10.5 6.206c0 2.37-1.922 4.29-4.295 4.29z" class="cls-1"/></svg>
-                  <span class="functions__item-text">Поиск</span>
-                </a>
-                <form class="functions__search-form" action="/echo" method="post">
-                  <label class="functions__input-label" for="search">
-                    <input class="functions__input  functions__input--search" type="text" id="search" name="search" placeholder="Поиск:" required>
-                    <span class="functions__input-name">Пoиск</span>
-                  </label>
-                  <button class="functions__search-btn">Поиск</button>
-                </form>
+
+                <div class="search">
+                  <a class="search__link" href="#">
+                    <svg class="search__link-svg  svg-icon_search">
+                      <use xlink:href="img/svg-sprite.svg#icon_search"></use>
+                    </svg>
+                    <span class="search__item-text">Поиск</span>
+                  </a>
+                  <form class="search__form" action="/echo" method="post">
+                    <label class="search__input-label" for="search">
+                      <input class="search__input" type="text" id="search" name="search" placeholder="Поиск:" required>
+                      <span class="search__input-name">Пoиск</span>
+                    </label>
+                    <button class="search__btn">Поиск</button>
+                  </form>
+                </div>
+
               </div>
 
               <!-- SingIn -->
               <div class="functions__item  functions__item--singin">
-                <a class="functions__item-link  functions__item-link--singin" href="#">
-                  <svg class="functions__icon  functions__icon--singin" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="20.062" height="19" viewBox="0 0 20.062 19"><path d="M17.06 18.986H6a3 3 0 0 1-3-3V15h2v2h13V2H5v1.968H3v-.96a3 3 0 0 1 3-3h11.06a3 3 0 0 1 3 3v12.978a3 3 0 0 1-3 3zM6.023 4.158l7.027 5.3-7.026 5.3v-2.743h-6.03V6.9h6.03V4.16z" class="cls-1"/></svg>
-                  Вход
-                </a>
-                <form class="functions__singin-form" action="/echo" method="post">
-                  <label class="functions__input-label" for="email">
-                    <input class="functions__input  functions__input--singin" type="text" name="email" id="email"  placeholder="Электронная почта">
-                    <span class="functions__input-name">Электронная почта</span>
-                  </label>
-                  <label class="functions__input-label" for="password">
-                    <input class="functions__input  functions__input--singin" type="password" name="password" id="password"  placeholder="Пароль">
-                    <span class="functions__input-name">Пароль</span>
-                  </label>
-                  <div class="functions__singin-buttons">
-                    <input class="btn btn--singin" type="submit" name="user-send" id="user-send" value="Войти">
-                    <div class="functions__singin-links">
-                      <div class="functions__singin-wrap">
-                        <a class="functions__singin-link" href="#">Забыли пароль?</a>
-                      </div>
-                      <div class="functions__singin-wrap">
-                        <a class="functions__singin-link" href="#">Новая регистрация</a>
+
+                <div class="singin">
+                  <a class="singin__link" href="#">
+                    <svg class="singin__link-svg  svg-icon_singin">
+                      <use xlink:href="img/svg-sprite.svg#icon_singin"></use>
+                    </svg>
+                    Вход
+                  </a>
+                  <form class="singin__form" action="/echo" method="post">
+                    <label class="singin__input-label" for="email">
+                      <input class="singin__input" type="text" name="email" id="email"  placeholder="Электронная почта">
+                      <span class="singin__input-name">Электронная почта</span>
+                    </label>
+                    <label class="singin__input-label" for="password">
+                      <input class="singin__input" type="password" name="password" id="password"  placeholder="Пароль">
+                      <span class="singin__input-name">Пароль</span>
+                    </label>
+                    <div class="singin__buttons">
+                      <input class="btn btn--singin" type="submit" name="user-send" id="user-send" value="Войти">
+                      <div class="singin__links">
+                        <div class="singin__link-wrap">
+                          <a class="singin__form-link" href="#">Забыли пароль?</a>
+                        </div>
+                        <div class="singin__link-wrap">
+                          <a class="singin__form-link" href="#">Новая регистрация</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
+
               </div>
 
               <!-- Cart -->
               <div class="functions__item  functions__item--cart">
-                <a class="functions__item-link functions__item-link--cart" href="#">
-                  <i class="functions__icon  functions__icon--cart-full"></i>
-                  <svg class="functions__icon  functions__icon--cart" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="20.62" height="19.719" viewBox="0 0 20.62 19.719"><path d="M20.576 4.43l-1.204 8.91c-.184.923-1.024 1.636-1.882 1.636H6.61c-.86 0-1.697-.713-1.88-1.635L3.263 3.055c-.146-.732-.157-.977-.137-1.055H1a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1 .99.99 0 0 1-.898.98h13.965c1.105 0 1.773 1.13 1.51 2.45zM5.418 3.945l1.313 9h10.673c-.005 0-.004-.002.004-.013l1.186-8.788s.028-.2.03-.2H5.42zm1.827 12.01a1.874 1.874 0 1 1 .002 3.748 1.874 1.874 0 0 1-.002-3.748zm9 0a1.874 1.874 0 1 1 0 3.748 1.874 1.874 0 0 1 0-3.748z" class="cls-1"/></svg>
-                  <span class="functions__cart-empty">Пусто</span><span class="functions__cart-full">2 товара</span>
-                </a>
-                <div class="functions__cart-form">
-                  <table class="functions__cart-table">
-                    <tr class="functions__cart-tr">
-                      <td class="functions__cart-td">
-                        <svg class="functions__cart-del" xmlns="http://www.w3.org/2000/svg" width="10.125" height="10.124" viewBox="0 0 10.125 10.124"><path id="_Х" data-name="Х" class="cls-1" d="M-.015.7l.708-.706 9.432 9.428-.707.707zm9.438-.715l.707.707-9.428 9.43-.708-.71z"/></svg>
-                      </td>
-                      <td class="functions__cart-td">
-                        <a class="functions__cart-link" href="#">
-                          <img class="functions__cart-img" src="img/img_product-1.png" alt="">
-                          Пломбир с апельсиновым джемом
-                        </a>
-                      </td>
-                      <td class="functions__cart-td">1,5 кг <span class="functions__cart-price">х 200 руб.</span></td>
-                      <td class="functions__cart-td">300 руб.</td>
-                    </tr>
-                    <tr class="functions__cart-tr">
-                      <td class="functions__cart-td">
-                        <svg class="functions__cart-del" xmlns="http://www.w3.org/2000/svg" width="10.125" height="10.124" viewBox="0 0 10.125 10.124"><path id="_Х" data-name="Х" class="cls-1" d="M-.015.7l.708-.706 9.432 9.428-.707.707zm9.438-.715l.707.707-9.428 9.43-.708-.71z"/></svg>
-                      </td>
-                      <td class="functions__cart-td">
-                        <a class="functions__cart-link" href="#">
-                          <img class="functions__cart-img" src="img/img_product-3.png" alt="">
-                          Клубничный пломбир с присыпкой из белого шоколада
-                        </a>
-                      </td>
-                      <td class="functions__cart-td">1,5 кг <span class="functions__cart-price">х 300 руб.</span></td>
-                      <td class="functions__cart-td">450 руб.</td>
-                    </tr>
-                  </table>
-                  <hr class="functions__cart-line">
-                  <div class="functions__cart-bill">Итого: <span class="function__cart-result">750 руб.</span></div>
-                  <input class="btn btn--cart" type="submit" name="cart-send" id="cart-send" value="Оформить заказ">
+
+                <div class="cart">
+                  <a class="cart__link" href="#">
+                    <svg class="cart__link-svg  svg-icon_cart">
+                      <use xlink:href="img/svg-sprite.svg#icon_cart"></use>
+                    </svg>
+                    <svg class="cart__link-svg-full  svg-icon_cart--full">
+                      <use xlink:href="img/svg-sprite.svg#icon_cart--full"></use>
+                    </svg>
+                    <span class="cart__empty">Пусто</span><span class="cart__full">2 товара</span>
+                  </a>
+                  <div class="cart__form">
+                    <table class="cart__table">
+                      <tr class="cart__tr">
+                        <td class="cart__td">
+                          <svg class="cart__del-svg  svg-icon_close">
+                            <use xlink:href="img/svg-sprite.svg#icon_close"></use>
+                          </svg>
+                        </td>
+                        <td class="cart__td">
+                          <a class="cart__table-link" href="#">
+                            <img class="cart__img" src="img/img_product-1.png" alt="">
+                            Пломбир с апельсиновым джемом
+                          </a>
+                        </td>
+                        <td class="cart__td">1,5 кг <span class="cart__price">х 200 руб.</span></td>
+                        <td class="cart__td">300 руб.</td>
+                      </tr>
+                      <tr class="cart__tr">
+                        <td class="cart__td">
+                          <svg class="cart__del-svg  svg-icon_close">
+                            <use xlink:href="img/svg-sprite.svg#icon_close"></use>
+                          </svg>
+                        </td>
+                        <td class="cart__td">
+                          <a class="cart__table-link" href="#">
+                            <img class="cart__img" src="img/img_product-3.png" alt="">
+                            Клубничный пломбир с присыпкой из белого шоколада
+                          </a>
+                        </td>
+                        <td class="cart__td">1,5 кг <span class="cart__price">х 300 руб.</span></td>
+                        <td class="cart__td">450 руб.</td>
+                      </tr>
+                    </table>
+                    <hr class="cart__line">
+                    <div class="cart__bill">Итого: <span class="function__result">750 руб.</span></div>
+                    <input class="btn btn--cart" type="submit" name="cart-send" id="cart-send" value="Оформить заказ">
+                  </div>
                 </div>
               </div>
               <!-- //cart -->
@@ -498,7 +522,7 @@
   </div>
 
   <script src="js/scripts.min.js"></script>
-  <script src="js/svg4everybody.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
 </body>
 </html>

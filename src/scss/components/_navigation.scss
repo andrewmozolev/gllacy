@@ -31,11 +31,6 @@
   }
 
 
-  &__item--sub:hover &__sub-list {
-    display: block;
-  }
-
-
   &__item:hover {
     background-color: #f7f6f3;
   }
@@ -73,7 +68,7 @@
   }
 
 
-  &__link::after {
+  &__link:hover::after {
     content: "";
     position: absolute;
     left: 0;
@@ -89,13 +84,19 @@
     z-index: 2;
     top: 37px;
     left: -7px;
-    display: none;
     width: 143px;
     font-size: 14px;
     font-weight: 400;
     border-radius: 5px;
     background-color: #f8f7f4;
     box-shadow: $shadow;
+    transform: translateY(-50%) scaleY(0);
+    transition: transform 0.3s;
+  }
+
+
+  &__item--sub:hover &__sub-list {
+    transform: translateY(0) scaleY(1);
   }
 
 

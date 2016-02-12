@@ -22,6 +22,7 @@
 
   &__container-inner {
     position: relative;
+    height: 430px;
     z-index: 1;
     margin-left: 2.3%;
     margin-right: 2.3%;
@@ -31,16 +32,19 @@
   &__contact {
     position: absolute;
     z-index: 2;
-    top: 65px;
+    top: 50%;
     right: 0;
     width: 302px;
     min-height: 305px;
+    max-height: 410px;
     padding-top: 29px;
-    padding-bottom: 31px;
+    padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
+    transform:translateY(-50%);
     border-radius: 15px;
     background-color: #fff;
+    overflow: auto;
   }
 
   &__text {

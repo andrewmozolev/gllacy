@@ -1,0 +1,109 @@
+.search {
+  position: relative;
+  z-index: 2;
+  display: block;
+  height: 32px;
+  width: 32px;
+  font-size: 14px;
+
+
+  &__item-text {
+    display: none;
+  }
+
+
+  &:hover::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 20px;
+    width: 100%;
+  }
+
+
+  &__link {
+    position: relative;
+    z-index: 2;
+    display: block;
+    padding: 7px;
+    height: 32px;
+    width: 100%;
+    text-align: left;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: $font-w--medium;
+    color: $c_white;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s,color 0.3s;
+  }
+
+
+  &:hover &__link,
+  &__link--active {
+    color: #000;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+
+  &__link-svg {
+    fill:#fff;
+    fill-rule: evenodd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: fill 0.3s;
+  }
+
+
+  &:hover &__link-svg {
+    fill:#323232;
+  }
+
+
+  &__form {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    width: 342px;
+    height: 69px;
+    padding: 15px;
+    text-align:left;
+    border-radius: $bdrs;
+    box-shadow:$shadow;
+    background-color: $bg_form;
+    transform: translate(50%,-50%) scale(0);
+    transition: transform 0.5s;
+  }
+
+  &:hover &__form {
+    transform: translate(0,0) scale(1);
+  }
+
+  &__input {
+    @include input-null;
+    @include input;
+    width: 311px;
+    height: 39px;
+    padding: 0 11px;
+    font-size: 14px;
+  }
+
+
+  &__input:hover,
+  &__input:focus {
+    padding: 0 10px;
+  }
+
+
+  &__btn {
+    display: none;
+  }
+
+
+  &:hover &__form {
+    display: block;
+  }
+}
