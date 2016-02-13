@@ -216,10 +216,10 @@
 
               <div class="sorting__item  sorting__item--range-filter">
                 <div class="sorting__title">Цена: <span>100 руб.</span> – <span>500 руб.</span></div>
-                <div class="range-controls">
-                  <div class="range-controls__scale"><div class="range-controls__bar"></div></div>
-                  <div class="range-controls__toggle  range-controls__toggle--min"></div>
-                  <div class="range-controls__toggle  range-controls__toggle--max"></div>
+                <div class="sorting__range-controls">
+                  <div class="sorting__range-scale"><div class="sorting__range-bar"></div></div>
+                  <div class="sorting__range-toggle  sorting__range-toggle--min"></div>
+                  <div class="sorting__range-toggle  sorting__range-toggle--max"></div>
                 </div>
               </div>
 
@@ -228,20 +228,20 @@
                 <div class="sorting__title">Жирность:</div>
                 <ul class="sorting__fat-list">
                   <li class="sorting__fat-item">
-                    <input class="sorting__fat-input" id="fat-1" name="fat" type="radio" checked>
-                    <label class="sorting__fat-label" for="fat-1">0%</label>
+                    <input class="sorting__fat-input" id="fat-1" name="fat" type="radio">
+                    <label class="sorting__fat-label" for="fat-1"><i class="sorting__fat-circle"></i>0%</label>
                   </li>
                   <li class="sorting__fat-item">
-                    <input class="sorting__fat-input" id="fat-2" name="fat" type="radio">
-                    <label class="sorting__fat-label" for="fat-2">до 10%</label>
+                    <input class="sorting__fat-input" id="fat-2" name="fat" type="radio" checked>
+                    <label class="sorting__fat-label" for="fat-2"><i class="sorting__fat-circle"></i>до 10%</label>
                   </li>
                   <li class="sorting__fat-item">
                     <input class="sorting__fat-input" id="fat-3" name="fat" type="radio">
-                    <label class="sorting__fat-label" for="fat-3">до 30%</label>
+                    <label class="sorting__fat-label" for="fat-3"><i class="sorting__fat-circle"></i>до 30%</label>
                   </li>
                   <li class="sorting__fat-item">
                     <input class="sorting__fat-input" id="fat-4" name="fat" type="radio">
-                    <label class="sorting__fat-label" for="fat-4">выше 30%</label>
+                    <label class="sorting__fat-label" for="fat-4"><i class="sorting__fat-circle"></i>выше 30%</label>
                   </li>
                 </ul>
               </div>
@@ -252,23 +252,23 @@
                 <ul class="sorting__filler-list">
                   <li class="sorting__filler-item">
                     <input class="sorting__filler-input" id="filler-1" name="filler-1" type="checkbox" checked>
-                    <label class="sorting__filler-label" for="filler-1">шоколадные</label>
+                    <label class="sorting__filler-label" for="filler-1"><i class="sorting__filler-checkbox"></i>шоколадные</label>
                   </li>
                   <li class="sorting__filler-item">
                     <input class="sorting__filler-input" id="filler-2" name="filler-2" type="checkbox" checked>
-                    <label class="sorting__filler-label" for="filler-2">сахарные присыпки</label>
+                    <label class="sorting__filler-label" for="filler-2"><i class="sorting__filler-checkbox"></i>сахарные присыпки</label>
                   </li>
                   <li class="sorting__filler-item">
                     <input class="sorting__filler-input" id="filler-3" name="filler-3" type="checkbox">
-                    <label class="sorting__filler-label" for="filler-3">фрукты</label>
+                    <label class="sorting__filler-label" for="filler-3"><i class="sorting__filler-checkbox"></i>фрукты</label>
                   </li>
                   <li class="sorting__filler-item">
                     <input class="sorting__filler-input" id="filler-4" name="filler-4" type="checkbox">
-                    <label class="sorting__filler-label" for="filler-4">сиропы</label>
+                    <label class="sorting__filler-label" for="filler-4"><i class="sorting__filler-checkbox"></i>сиропы</label>
                   </li>
                   <li class="sorting__filler-item">
                     <input class="sorting__filler-input" id="filler-5" name="filler-4" type="checkbox">
-                    <label class="sorting__filler-label" for="filler-5">джемы</label>
+                    <label class="sorting__filler-label" for="filler-5"><i class="sorting__filler-checkbox"></i>джемы</label>
                   </li>
                 </ul>
               </div>
@@ -404,13 +404,23 @@
 
           <div class="catalog-pagination">
             <ul class="catalog-pagination__list">
-              <li class="catalog-pagination__item"><a class="catalog-pagination__link-prev  catalog-pagination__link-prev--disabled" href="#">Предыдущая</a></li>
+              <li class="catalog-pagination__item"><a class="catalog-pagination__link-prev  catalog-pagination__link-prev--disabled" href="#">
+                <svg class="catalog-pagination__svg-prev  svg-icon_pagination-prev">
+                  <use xlink:href="img/svg-sprite.svg#icon_pagination-prev"></use>
+                </svg>
+                Предыдущая
+              </a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link  catalog-pagination__link--current" href="#">1</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">2</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">3</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">4</a></li>
               <li class="catalog-pagination__item"><a class="catalog-pagination__link" href="#">5</a></li>
-              <li class="catalog-pagination__item"><a class="catalog-pagination__link-next" href="#">Следующая</a></li>
+              <li class="catalog-pagination__item"><a class="catalog-pagination__link-next" href="#">
+                Следующая
+                <svg class="catalog-pagination__svg-next  svg-icon_pagination-next">
+                  <use xlink:href="img/svg-sprite.svg#icon_pagination-next"></use>
+                </svg>
+              </a></li>
             </ul>
           </div>
 
@@ -537,7 +547,7 @@
   </div>
 
   <script src="js/scripts.min.js"></script>
-  <script src="js/svg4everybody.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
 </body>
 </html>

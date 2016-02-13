@@ -49,19 +49,18 @@
 
 
   &__link-svg {
-    fill:#fff;
-    fill-rule: evenodd;
+    fill: currentColor;
     position: absolute;
     z-index: 3;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    transition: fill 0.1s;
+    // transition: fill 0.1s;
   }
 
 
   &:hover &__link-svg {
-    fill:#323232;
+    // fill:#323232;
   }
 
 
@@ -106,7 +105,6 @@
     position: absolute;
     top: 36px;
     right: 0;
-    // display: none;
     width: 540px;
     min-height: 239px;
     padding: 15px;

@@ -1,21 +1,25 @@
 .catalog-pagination {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-top: 39px;
+  margin-bottom: 40px;
 
 
   &__list {
     @include list-null;
+    margin-right: -10px;
     font-size: 0;
     display: flex;
   }
 
+
   &__item {
+    margin-left: 3px;
     font-size: 16px;
     font-weight: $font-w--medium;
     color: $c_white;
-    // outline: 1px solid green;
   }
+
 
   &__link {
     display: block;
@@ -29,8 +33,7 @@
     text-decoration: none;
   }
 
-  &__link-prev:hover,
-  &__link-next:hover,
+
   &__link:not(.catalog-pagination__link--current):hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
@@ -39,35 +42,45 @@
   &__link-prev,
   &__link-next {
     @include font-null;
+    position: relative;
     display: block;
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    // background-size: 100px;
   }
 
 
-  &__link-prev {
-    margin-right: 5px;
-    background-image:url(../img/icon_pagination-prev.svg);
+  &__svg-prev,
+  &__svg-next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: #fff;
+    transform: translate(-50%,-50%);
   }
 
 
   &__link-next {
-    margin-left: 5px;
-    background-image:url(../img/icon_pagination-next.svg);
+    margin-left: 4px;
   }
 
-  &__link-prev:active,
-  &__link-next:active,
+
+  &__link-prev {
+    margin-right: 4px;
+  }
+
+
+  &__link-prev--disabled &__svg-prev,
+  &__link-next--disabled &__svg-next  {
+    fill: rgba(255, 255, 255, 0.2);
+  }
+
+
   &__link--current,
   &__link:active,
   &__link:active:hover {
     background-color: #fff;
     color: #353535;
-
   }
 
 }
