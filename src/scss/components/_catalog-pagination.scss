@@ -76,6 +76,14 @@
   }
 
 
+  &__link-prev--disabled,
+  &__link-next--disabled,
+  &__link--current  {
+    cursor: default;
+  }
+
+
+
   &__link--current,
   &__link:active,
   &__link:active:hover {

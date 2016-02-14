@@ -17,6 +17,7 @@
     @include container;
     position: relative;
     z-index: 1;
+    pointer-events:none;
   }
 
 
@@ -45,6 +46,7 @@
     border-radius: 15px;
     background-color: #fff;
     overflow: auto;
+    pointer-events:auto;
   }
 
   &__text {
