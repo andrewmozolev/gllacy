@@ -15,7 +15,7 @@
     z-index: 1000;
     top: 50%;
     left: 50%;
-    height: 442px;
+    min-height: 442px;
     width: 477px;
     padding-top: 17px;
     padding-bottom: 27px;
@@ -57,20 +57,13 @@
   }
 
 
-  &__form {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: flex-start;
-  }
-
-
   &__input {
     @include input-null;
     @include input;
     height: 44px;
     width: 267px;
     padding: 9px 21px;
+    margin-bottom: 20px;
     font-weight: $font-w--regular;
   }
 
@@ -80,7 +73,6 @@
 
 
   &__input-name {
-    top: 5px;
     left: 19px;
   }
 
@@ -100,6 +92,11 @@
   }
 
 
+  &__input--textarea + &__input-name {
+    top: -152px;
+  }
+
+
   &__input--textarea:hover {
     padding: 8px 20px;
     border: $bd-input--hover;
@@ -112,13 +109,8 @@
   }
 
 
-  &__input-label--textarea {
-    margin-bottom: 25px;
-  }
-
-
   &__btn {
-    align-self:flex-end;
+    text-align: right;
   }
 
 

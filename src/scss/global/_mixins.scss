@@ -68,23 +68,23 @@
 
   &-name {
     position: absolute;
-    z-index: -1;
     top: -3px;
     left: 17px;
     display: block;
     max-width: 100%;
     font-size: 13px;
     opacity: 0;
+    visibility: hidden;
     color: #5b9ddf;
     transition: all 0.3s ease;
     transition-delay: 0.1s;
   }
 
   &:focus + &-name {
-    z-index: 2;
     font-size: 11px;
     opacity: 1;
-    transform: translateY(-20px)
+    visibility: visible;
+    transform: translateY(-22px);
   }
 
   &:not(:placeholder-shown) + &-name {

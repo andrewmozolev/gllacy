@@ -37,6 +37,7 @@
 
 
   &:hover &__link,
+  &__link:hover,
   &__link--active {
     color: #000;
     background-color: rgba(255, 255, 255, 1);
@@ -47,15 +48,10 @@
     position: absolute;
     top: 50%;
     left: 16px;
-    fill:#fff;
+    fill:currentColor;
     fill-rule: evenodd;
     transform: translateY(-50%);
     transition: fill 0.3s;
-  }
-
-
-  &:hover &__link-svg {
-    fill:#323232;
   }
 
 
@@ -70,10 +66,9 @@
     position: absolute;
     top: 36px;
     right: 0;
-    // display: none;
     text-align: left;
     width: 272px;
-    height: 175px;
+    min-height: 175px;
     padding: 15px;
     padding-top: 20px;
     box-shadow:$shadow;
@@ -81,13 +76,13 @@
     background-color: $bg_form;
     transform: translate(50%,-50%) scale(0);
 
-    transition: transform 0.4s;
+    transition: transform 0.4s ease-in-out;
   }
 
 
   &:hover &__form {
     transform: translate(0,0) scale(1);
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in-out;
   }
 
 

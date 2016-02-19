@@ -6,7 +6,7 @@
   font-size: 15px;
   min-height: 35px;
   padding: 8px 30px;
-  border-radius: 150px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: $font-w--bold;
   line-height: 1.4;
@@ -47,9 +47,10 @@
   }
 
 
-  &--gift {
+  &--action {
     min-height: 45px;
     min-width: 150px;
+    max-width: 250px;
     padding: 10px 21px;
     font-size: 18px;
     font-weight: $font-w--bold;

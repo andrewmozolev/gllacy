@@ -1,26 +1,21 @@
-.gift {
-  display: flex;
+.action {
+  position: relative;
+  width: 100%;
+  min-height: 229px;
+  padding:12px 20px;
+  padding-bottom: 70px;
+  border-radius: 12px;
+  color: $c_white;
   margin-bottom: 40px;
+  background-color: #6d1426;
 
-  &__item {
-    position: relative;
-    width: 48.85%;
-    min-height: 229px;
-    padding:12px 20px;
-    padding-bottom: 70px;
-    border-radius: 12px;
-    color: $c_white;
+
+  &--raspberry {
+  background-image: url(../img/bg_gift-malina.png);
   }
 
 
-  &__item--left {
-    margin-right: 2.3%;
-    background-color: #6d1426;
-    background-image: url(../img/bg_gift-malina.png);
-  }
-
-
-  &__item--right {
+  &--chocolate {
     background-color: #40261b;
     background-image: url(../img/bg_gift-chocolate.png);
   }

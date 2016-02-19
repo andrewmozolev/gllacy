@@ -6,11 +6,6 @@
   font-size: 14px;
 
 
-  &__form  {
-
-  }
-
-
   &:hover::after {
     content: "";
     z-index: 1;
@@ -41,7 +36,14 @@
   }
 
 
+  &__link--full  &__link-svg-full{
+    display: block;
+  }
+
+
   &:hover &__link,
+  &__link--full,
+  &__link:hover,
   &__link--active {
     color: #000;
     background-color: rgba(255, 255, 255, 1);
@@ -55,12 +57,6 @@
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    // transition: fill 0.1s;
-  }
-
-
-  &:hover &__link-svg {
-    // fill:#323232;
   }
 
 
@@ -69,35 +65,14 @@
     z-index: 2;
     top: 50%;
     left: 20px;
+    display: none;
     transform: translateY(-60%);
-    opacity: 0;
     fill:#f00;
-    transition: opacity 0.1s;
-  }
-
-
-  &:hover &__link-svg-full {
-    opacity: 1;
   }
 
 
   &:hover &__form {
     display: block;
-  }
-
-
-  &__full {
-    display: none;
-  }
-
-
-  &:hover &__full {
-    display: block;
-  }
-
-
-  &:hover &__empty {
-    display: none;
   }
 
 
@@ -115,12 +90,12 @@
     background-color: $bg_form;
     box-shadow: $shadow;
     transform: translate(50%,-50%) scale(0);
-    transition: transform 0.4s;
+    transition: transform 0.4s ease-in-out;
   }
 
   &:hover &__form {
     transform: translate(0,0) scale(1);
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in-out;
   }
 
 

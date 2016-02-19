@@ -1,28 +1,15 @@
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
-  align-items:flex-start;
+ .catalog-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 39px;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
 
 
-  &__item {
-    position: relative;
-    width: 23.35%;
-    margin-right: 2.2%;
-    margin-bottom: 38px;
-    text-align: center;
-    transition: background-color 0.3s, box-shadow 0.3s;
-  }
-
-
-  &__item:nth-child(4n) {
-    margin-right: 0;
-  }
-
-
-  &__item--hit::before {
+  &--hit::before {
     content: "";
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 61px;
@@ -32,22 +19,36 @@
   }
 
 
-  &__item-image {
+  &__wrap {
+    position: relative;
     width: 100%;
   }
 
-
   &__img-wrap {
     position: relative;
-    z-index: 1;
-    margin-bottom: 8px;
+    z-index: 3;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-bottom: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
   }
 
 
   &__price-wrap {
     position: absolute;
-    left: 0;
-    bottom: 12px;
+    z-index: 4;
+    left: -1px;
+    bottom: 7px;
     font-size: 45px;
     color: $c_white;
     font-weight: $font-w--bold;
@@ -64,12 +65,13 @@
   }
 
 
-  &__item-price {
-    white-space: nowrap;
+  &__price {
+    white-space: wrap;
+    max-width: 100%;
   }
 
 
-  &__item-price::after {
+  &__price::after {
     margin-right: 3px;
     margin-left: 5px;
     content:"\e806";
@@ -84,7 +86,8 @@
     font-size: 30px;
   }
 
-  &__item-discription {
+
+  &__discription {
     display: inline;
     text-align: center;
     font-size: 16px;
@@ -94,43 +97,53 @@
   }
 
 
-  &__item-btn {
-    position: absolute;
-    z-index: 2;
-    display: none;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-
-  &__item:hover &__item-discription {
+  &:hover &__discription {
     border-bottom: none;
   }
 
 
-  &__item:hover &__item-btn {
-    display: block;
+
+  &__btn {
+    position: absolute;
+    z-index: 4;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -49px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &:hover &__btn {
+    opacity: 1;
+    visibility: visible;
   }
 
-  &__item:hover {
-    z-index: 2;
-    cursor: pointer;
-    margin-bottom: -65px;
-    padding-bottom: 65px;
-  }
 
-  &__item:hover::after {
+
+  &::after {
     content:"";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 105%;
-    height: 105%;
-    transform:translate(-50%, -50%);
+    z-index: 2;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -65px;
+    opacity: 0;
+    visibility: hidden;
     border-radius: $bdrs;
     background-color: rgba(248, 247, 244, 0.3);
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+  }
+
+
+  &:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  &:hover {
+    z-index: 10;
+    cursor: pointer;
   }
 }

@@ -1,0 +1,28 @@
+  .breadcrumbs {
+    @include list-null;
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 5px;
+
+
+  &__item {
+    position: relative;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: $font-w--regular;
+    color: $c_white;
+  }
+
+
+  &__item:not(:last-child)::after {
+    position: absolute;
+    top: 0;
+    right: -13px;
+    content:"\00BB";
+  }
+
+
+  &__link {
+    @include link-white;
+  }
+}

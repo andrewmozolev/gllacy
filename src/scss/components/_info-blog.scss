@@ -1,0 +1,40 @@
+ .info-blog {
+    width: 100%;
+    min-height: 220px;
+    margin-bottom: 40px;
+    padding: 20px;
+    padding-top: 24px;
+    border-radius: 13px;
+    background-image: url(../img/bg_info-blog.png);
+    background-size: cover;
+    background-position: right 0 top 0;
+    background-repeat: no-repeat;
+
+
+  &__blog-wrap {
+    max-width: 300px;
+  }
+
+
+  &__title {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: $font-w--medium;
+    color: #5a5a5a;
+  }
+
+
+  &__link {
+    font-size: 24px;
+    line-height: 1.27;
+    font-weight: $font-w--bold;
+    color: #353535;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+  }
+
+  &__link:hover {
+    color: $c_link--hover;
+  }
+}

@@ -21,20 +21,15 @@
 
   &__wrap {
     display: flex;
-  }
-
-
-  &__column {
-    width: 48.85%;
-  }
-
-
-  &__column--left {
-    margin-right: 2.3%;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
 
   &__feature {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 48.85%;
     position: relative;
     margin-bottom: 9px;
     padding-top: 12px;
@@ -43,6 +38,7 @@
     line-height: 22px;
     color: #323232;
   }
+
 
   &__svg {
     position: absolute;
