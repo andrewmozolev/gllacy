@@ -17,7 +17,7 @@
     padding-top: 29px;
     padding-bottom: 33px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 19px;
     border-radius: 10px;
     background-color: #f8f7f4;
   }
@@ -36,16 +36,13 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    width: 507px;
   }
 
   &__input {
     @include input-null;
     @include input;
     flex-grow: 1;
-    width: 100%;
     height: 44px;
-    margin-right: 140px;
     padding:  11px;
     font-size: 14px;
   }
@@ -58,6 +55,8 @@
 
 
   &__input-label {
+    display: flex;
+    width: 100px;
     flex-grow: 1;
   }
 

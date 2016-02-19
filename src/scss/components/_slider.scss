@@ -23,14 +23,16 @@
 
 .slider {
   position: relative;
-  height: 565px;
+  min-height: 565px;
   margin-bottom: 4px;
 
 
 
   &__slide {
     display: none;
-    height: 565px;
+    min-height: 565px;
+    max-height:700px;
+    overflow: auto;
     padding-top: 314px;
     text-align: center;
   }

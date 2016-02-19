@@ -8,11 +8,14 @@
   padding: 8px 30px;
   border-radius: 30px;
   text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-weight: $font-w--bold;
   line-height: 1.4;
   text-align: center;
   color: $c_white;
-  background-image: #e74a35;
+  background-color: #e74a35;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 
@@ -38,8 +41,11 @@
 
 
   &--slide {
-    height: 63px;
+    display: block;
+    min-height: 63px;
+    max-height: 126px;
     min-width: 280px;
+    max-width: 700px;
     font-size: 31.48px;
     line-height: 63px;
     padding: 0 42px;

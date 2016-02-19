@@ -2,16 +2,17 @@
 
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 38px;
     margin-top: 19px;
   }
 
   &__item {
     position: relative;
-    height: 36px;
+    min-height: 36px;
     margin-right: 16px;
+    margin-bottom: 38px;
     border-radius: 18px;
     font-size: 16px;
     font-weight: $font-w--medium;
@@ -227,14 +228,14 @@
   &__filler-list {
     @include list-null;
     display: flex;
+    flex-wrap: wrap;
     min-width: 702px;
     padding-left: 16px;
+
   }
 
   &__filler-item {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
     height: 36px;
     margin-right: 18px;
     padding-top: 9px;

@@ -5,13 +5,14 @@
     padding: 20px;
     padding-top: 24px;
     border-radius: 13px;
+    background-color: #fff;
     background-image: url(../img/bg_info-blog.png);
     background-size: cover;
     background-position: right 0 top 0;
     background-repeat: no-repeat;
 
 
-  &__blog-wrap {
+  &__wrap {
     max-width: 300px;
   }
 

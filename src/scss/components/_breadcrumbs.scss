@@ -1,8 +1,10 @@
   .breadcrumbs {
     @include list-null;
     display: flex;
+    flex-wrap: wrap;
     padding-top: 20px;
     margin-bottom: 5px;
+    max-width: 70%;
 
 
   &__item {

@@ -42,12 +42,12 @@
     transition: background-color 0.2s, color 0.2s;
   }
 
-
+  &__link:not(.navigation__link--active):active,
   &__link:not(.navigation__link--active):hover {
     background-color: #f7f6f3;
   }
 
-
+  &__link:not(.navigation__link--active):active,
   &__link:not(.navigation__link--active):hover {
     color: $c_black;
   }
