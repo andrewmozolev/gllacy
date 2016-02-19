@@ -18,7 +18,7 @@ function pageOnLoad() {
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
   var image = new google.maps.MarkerImage(
-    'img/img_map-marker.png',
+    '../img/img_map-marker.png',
     new google.maps.Size(218,142),
     new google.maps.Point(0,0),
     new google.maps.Point(40,142)
