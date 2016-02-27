@@ -3,8 +3,11 @@
   width: 100%;
   margin-bottom: 39px;
   text-align: center;
-  transition: background-color 0.3s, box-shadow 0.3s;
 
+
+  &--zindex {
+    z-index: 10;
+  }
 
   &--hit::before {
     content: "";
@@ -44,7 +47,7 @@
   }
 
 
-  &__price-wrap {
+  &__price {
     position: absolute;
     z-index: 4;
     left: -1px;
@@ -56,7 +59,7 @@
   }
 
 
-  &__rub-hide {
+  &__currency {
     font: 0/0 a;
     color: transparent;
     text-shadow: none;
@@ -65,25 +68,21 @@
   }
 
 
-  &__price {
-    white-space: wrap;
-    max-width: 100%;
-  }
-
-
-  &__price::after {
+  &__currency::after {
     margin-right: 3px;
     margin-left: 5px;
     content:"\e806";
     font-family: "fontello";
-    font-size: 38px;
+    font-size: 40px;
     font-style: normal;
     font-weight: normal;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
   }
 
 
-  &__kilo {
-    font-size: 30px;
+  &__price  small{
+    font-size: 66%;
   }
 
 
@@ -102,7 +101,6 @@
   }
 
 
-
   &__btn {
     position: absolute;
     z-index: 4;
@@ -112,10 +110,17 @@
     bottom: -49px;
     visibility: hidden;
     opacity: 0;
+    animation-name: btn-hide;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
   }
+
   &:hover &__btn {
-    opacity: 1;
-    visibility: visible;
+    animation-name: bounceInUp;
+    animation-duration: 0.6s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-fill-mode: forwards;
   }
 
 
@@ -133,12 +138,16 @@
     border-radius: $bdrs;
     background-color: rgba(248, 247, 244, 0.3);
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    animation-name: catalog-item-hide;
+    animation-duration: 0.65s;
+    animation-fill-mode: forwards;
   }
 
-
   &:hover::after {
-    opacity: 1;
-    visibility: visible;
+    animation-name: catalog-item-show;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
   }
 
 

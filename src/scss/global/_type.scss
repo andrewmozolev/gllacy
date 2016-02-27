@@ -10,7 +10,7 @@ svg {
   fill-rule: evenodd;
 }
 body {
-  min-width: $min-w;
+  // min-width: $min-w;
   @include m-p-0;
   font-family: $font-family--main;
   font-style: normal;

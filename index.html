@@ -2,10 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&nbsp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body onload="pageOnLoad()">
   <input class="slider-input" type="radio" name="toggle" id="toggle-1" checked>
@@ -137,7 +138,7 @@
                         </td>
                         <td class="cart__td">
                           <a class="cart__table-link" href="#">
-                            <img class="cart__img" src="img/img_product-1.png" alt="">
+                            <img class="cart__img" src="img/img_product-1.png" width="34" height="34" alt="">
                             Пломбир с апельсиновым джемом
                           </a>
                         </td>
@@ -154,7 +155,7 @@
                         </td>
                         <td class="cart__td">
                           <a class="cart__table-link" href="#">
-                            <img class="cart__img" src="img/img_product-3.png" alt="">
+                            <img class="cart__img" src="img/img_product-3.png" width="34" height="34" alt="">
                             Клубничный пломбир с присыпкой из белого шоколада
                           </a>
                         </td>
@@ -226,7 +227,7 @@
 
 
           <div class="grid">
-            <div class="grid__col">
+            <div class="grid__col  grid__col--lg-6">
               <div class="action  action--raspberry">
                 <h2 class="action__title">Малинка даром!</h2>
                 <p class="action__text">
@@ -238,7 +239,7 @@
                 </div>
               </div>
             </div>
-            <div class="grid__col">
+            <div class="grid__col  grid__col--lg-6">
               <div class="action  action--chocolate">
                 <h2 class="action__title">Шоколадки даром!</h2>
                 <p class="action__text">
@@ -253,16 +254,14 @@
           </div>
 
 
-          <div class="grid  grid--nogrow">
-            <div class="grid__col">
+          <div class="grid">
+            <div class="grid__col  grid__col--sm-6 grid__col--lg-3">
               <div class="catalog-item  catalog-item--hit">
                 <div class="catalog-item__wrap">
                   <div class="catalog-item__img-wrap">
                     <img class="catalog-item__image" src="img/img_product-1.png" alt="ice-cream">
                   </div>
-                  <div class="catalog-item__price-wrap">
-                    <span class="catalog-item__price">310<b class="catalog-item__rub-hide">Р</b></span><span class="catalog-item__kilo">/кг</span>
-                  </div>
+                  <div class="catalog-item__price">310<span class="catalog-item__currency">Р</span><small>/кг</small></div>
                 </div>
                 <p class="catalog-item__discription">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 
@@ -270,15 +269,13 @@
                 </div>
               </div>
             </div>
-            <div class="grid__col">
+            <div class="grid__col    grid__col--sm-6  grid__col--lg-3">
               <div class="catalog-item  catalog-item--hit">
                 <div class="catalog-item__wrap">
                   <div class="catalog-item__img-wrap">
-                    <img class="catalog-item__image" src="img/img_product-2.png" alt="ice-cream">
+                    <img class="catalog-item__image"  src="img/img_product-2.png" alt="ice-cream">
                   </div>
-                  <div class="catalog-item__price-wrap">
-                    <span class="catalog-item__price">380<b class="catalog-item__rub-hide">Р</b></span><span class="catalog-item__kilo">/кг</span>
-                  </div>
+                  <div class="catalog-item__price">380<span class="catalog-item__currency">Р</span><small>/кг</small></div>
                 </div>
                 <p class="catalog-item__discription">Сливочно-кофейное с кусочками шоколада</p>
 
@@ -286,15 +283,13 @@
                 </div>
               </div>
             </div>
-            <div class="grid__col">
+            <div class="grid__col  grid__col--sm-6  grid__col--lg-3">
               <div class="catalog-item  catalog-item--hit">
                 <div class="catalog-item__wrap">
                   <div class="catalog-item__img-wrap">
                     <img class="catalog-item__image" src="img/img_product-3.png" alt="ice-cream">
                   </div>
-                  <div class="catalog-item__price-wrap">
-                    <span class="catalog-item__price">355<b class="catalog-item__rub-hide">Р</b></span><span class="catalog-item__kilo">/кг</span>
-                  </div>
+                  <div class="catalog-item__price">355<span class="catalog-item__currency">Р</span><small>/кг</small></div>
                 </div>
                 <p class="catalog-item__discription">Сливочно-клубничное с присыпкой из белого шоколада</p>
 
@@ -302,15 +297,13 @@
                 </div>
               </div>
             </div>
-            <div class="grid__col">
+            <div class="grid__col  grid__col--sm-6  grid__col--lg-3">
               <div class="catalog-item  catalog-item--hit">
                 <div class="catalog-item__wrap">
                   <div class="catalog-item__img-wrap">
                     <img class="catalog-item__image" src="img/img_product-4.png" alt="ice-cream">
                   </div>
-                  <div class="catalog-item__price-wrap">
-                    <span class="catalog-item__price">415<b class="catalog-item__rub-hide">Р</b></span><span class="catalog-item__kilo">/кг</span>
-                  </div>
+                  <div class="catalog-item__price">415<span class="catalog-item__currency">Р</span><small>/кг</small></div>
                 </div>
                 <p class="catalog-item__discription">Сливочное крем-брюле с карамельной подливкой</p>
 
@@ -371,7 +364,7 @@
           </div>
 
           <div class="grid">
-            <div class="grid__col">
+          <div class="grid__col  grid__col--lg-6">
               <div class="info-blog">
                 <div class="info-blog__wrap">
                   <span class="info-blog__title">Новое в нашем блоге</span>
@@ -383,22 +376,20 @@
                 </div>
               </div>
             </div>
-            <div class="grid__col">
+            <div class="grid__col  grid__col--lg-6">
               <div class="subscribe">
-                <div class="subscribe__wrap">
-                  <p class="subscribe__text">
-                    Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-                    всего самого вкусного, что у нас происходит. Обещаем не спамить
-                    и не слать всякой не нужной ерунды. Честно =)
-                  </p>
-                  <form class="subscribe__form" action="/echo" method="post">
-                    <label class="subscribe__input-label" for="email-send">
-                      <input class="subscribe__input" type="email" id="email-send" name="email-send" placeholder="Электронная почта" required>
-                      <span class="subscribe__input-name">Электронная почта</span>
-                    </label>
-                    <button class="btn  btn--subscribe" title="Отправить">Отправить</button>
-                  </form>
-                </div>
+                <p class="subscribe__text">
+                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                  всего самого вкусного, что у нас происходит. Обещаем не спамить
+                  и не слать всякой не нужной ерунды. Честно =)
+                </p>
+                <form class="subscribe__form" action="/echo" method="post">
+                  <label class="subscribe__input-label" for="email-send">
+                    <input class="subscribe__input" type="email" id="email-send" name="email-send" placeholder="Электронная почта" required>
+                    <span class="subscribe__input-name">Электронная почта</span>
+                  </label>
+                  <button class="btn  btn--subscribe" title="Отправить">Отправить</button>
+                </form>
               </div>
             </div>
           </div>
@@ -431,7 +422,7 @@
                 (с 10 до 20 ежедневно)
               </p>
               <div class="map__btn">
-                <a class="btn  btn--map" href="#" title="Форма обратной связи">Форма обратной связи</a>
+                <a class="btn  btn--map" href="feedback.html" title="Форма обратной связи">Форма обратной связи</a>
               </div>
             </div>
 
@@ -489,15 +480,13 @@
                   </a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="#" class="footer-nav__link" title="О производстве">
-                    О производстве
-                  </a>
-                </li>
-              </ul>
-              <ul class="footer-nav__list">
-                <li class="footer-nav__item">
                   <a href="#" class="footer-nav__link" title="Наши документы">
                     Наши документы
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="#" class="footer-nav__link" title="О производстве">
+                    О производстве
                   </a>
                 </li>
                 <li class="footer-nav__item">

@@ -1,6 +1,7 @@
 .footer-social {
   position: relative;
   z-index: 2;
+  flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
