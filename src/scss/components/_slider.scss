@@ -1,26 +1,3 @@
-
-.slider-input {
-  display: none;
-}
-.slider-input[id="toggle-1"]:checked ~ .page,
-.slider-input[id="toggle-2"]:checked ~ .page,
-.slider-input[id="toggle-3"]:checked ~ .page {
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-}
-.slider-input[id="toggle-1"]:checked ~ .page {
-  background-color: #849d8f;
-  background-image: url(../img/bg_slide-1.png);
-}
-.slider-input[id="toggle-2"]:checked ~ .page {
-  background-color: #8996a6;
-  background-image: url(../img/bg_slide-2.png);
-}
-.slider-input[id="toggle-3"]:checked ~ .page {
-  background-color: #9d8b84;
-  background-image: url(../img/bg_slide-3.png);
-}
-
 .slider {
   position: relative;
   min-height: 565px;

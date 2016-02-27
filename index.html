@@ -9,6 +9,29 @@
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body onload="pageOnLoad()">
+  <style>
+    .slider-input {
+      display: none;
+    }
+    .slider-input[id="toggle-1"]:checked ~ .page,
+    .slider-input[id="toggle-2"]:checked ~ .page,
+    .slider-input[id="toggle-3"]:checked ~ .page {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+    .slider-input[id="toggle-1"]:checked ~ .page {
+      background-color: #849d8f;
+      background-image: url("./img/bg_slide-1.jpg");
+    }
+    .slider-input[id="toggle-2"]:checked ~ .page {
+      background-color: #8996a6;
+      background-image: url("./img/bg_slide-2.jpg");
+    }
+    .slider-input[id="toggle-3"]:checked ~ .page {
+      background-color: #9d8b84;
+      background-image: url("./img/bg_slide-3.jpg");
+    }
+  </style>
   <input class="slider-input" type="radio" name="toggle" id="toggle-1" checked>
   <input class="slider-input" type="radio" name="toggle" id="toggle-2">
   <input class="slider-input" type="radio" name="toggle" id="toggle-3">
@@ -364,7 +387,7 @@
           </div>
 
           <div class="grid">
-          <div class="grid__col  grid__col--lg-6">
+            <div class="grid__col  grid__col--lg-6">
               <div class="info-blog">
                 <div class="info-blog__wrap">
                   <span class="info-blog__title">Новое в нашем блоге</span>

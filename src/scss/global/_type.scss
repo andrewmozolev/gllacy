@@ -45,16 +45,16 @@ hr {
   height: 1px;
   background-color: #cacac7;
 }
-.container {
-  @include container;
+// .container {
+//   @include container;
 
-  &__wrap {
+  .container__wrap {
     padding-left: 2.3%;
     padding-right: 2.3%;
     // outline: 1px solid red;
 
   }
-}
+
 div,nav,li,img,p {
   // outline: 1px solid blue;
 }

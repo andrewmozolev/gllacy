@@ -34,6 +34,7 @@ $breakpoints: (
   }
 }
 
+
 @each $key, $value in $breakpoints {
   @media (min-width: map-get($breakpoints, $key)) {
     .container,
